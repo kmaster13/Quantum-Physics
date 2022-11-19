@@ -1,6 +1,9 @@
 package com.ssau.tk.quantumphysics;
 
+import com.ssau.tk.quantumphysics.models.Constants;
+import com.ssau.tk.quantumphysics.models.ExposureTime;
 import com.ssau.tk.quantumphysics.models.ProbabilityDensity;
+import com.ssau.tk.quantumphysics.models.TimeTableModel;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -16,40 +19,48 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.List;
 
 public class ExposureTimeController {
 
-    private final ObservableList<ProbabilityDensity> TimeData = FXCollections.observableArrayList();
+    private final ObservableList<TimeTableModel> TimeData = FXCollections.observableArrayList();
 
     @FXML
-    private TableView<ProbabilityDensity> tableTime;
+    private TableView<TimeTableModel> tableTime;
 
     @FXML
-    private TableColumn<ProbabilityDensity, Double> timeRezColumn;
+    private TableColumn<TimeTableModel, Double> timeRezColumn;
     @FXML
-    private TableColumn<ProbabilityDensity, Double> timeTompColumn;
+    private TableColumn<TimeTableModel, Double> timeTompColumn;
     @FXML
-    private TableColumn<ProbabilityDensity, Double> AngleColumn;
+    private TableColumn<TimeTableModel, Double> AngleColumn;
 
     @FXML
-    private TableColumn<ProbabilityDensity, Double> newListRezColumn;
+    private TableColumn<TimeTableModel, Double> newListRezColumn;
     @FXML
-    private TableColumn<ProbabilityDensity, Double> newListTompColumn;
+    private TableColumn<TimeTableModel, Double> newListTompColumn;
 
+    private final List<Double> angleList = Constants.timeList;
+
+    private final List<Double> probList = ProbabilityDensity.rutherford(angleList);
+
+    private final List<Double> timeList = ExposureTime.angle(probList);
 
 
     @FXML
     private void initialize() {
 
-
         // устанавливаем тип и значение которое должно хранится в колонке
-        timeRezColumn.setCellValueFactory(new PropertyValueFactory<ProbabilityDensity, Double>("time"));
-        timeTompColumn.setCellValueFactory(new PropertyValueFactory<ProbabilityDensity, Double>("time"));
-        newListRezColumn.setCellValueFactory(new PropertyValueFactory<ProbabilityDensity, Double>("newList"));
-        newListTompColumn.setCellValueFactory(new PropertyValueFactory<ProbabilityDensity, Double>("newList"));
+        initData();
+        AngleColumn.setCellValueFactory(new PropertyValueFactory<>("angle"));
+        timeRezColumn.setCellValueFactory(new PropertyValueFactory<>("timeRuther"));
+        timeTompColumn.setCellValueFactory(new PropertyValueFactory<>("timeTomp"));
+        newListRezColumn.setCellValueFactory(new PropertyValueFactory<>("probRuther"));
+        newListTompColumn.setCellValueFactory(new PropertyValueFactory<>("probTomp"));
         tableTime.setItems(TimeData);
 
     }
+
     @FXML
     protected void getToMainWindow(ActionEvent event) throws IOException {
         URL resource = MenuController.class.getResource("menu.fxml");
@@ -62,6 +73,9 @@ public class ExposureTimeController {
     }
 
     private void initData() {
-
+        for (int i = 0; i < angleList.size(); i++) {
+            TimeData.add(new TimeTableModel(angleList.get(i), probList.get(i), timeList.get(i),0.0, 0.0));
+            tableTime.setItems(TimeData);
+        }
     }
 }

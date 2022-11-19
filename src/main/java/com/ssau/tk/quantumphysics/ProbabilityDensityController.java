@@ -1,7 +1,8 @@
 package com.ssau.tk.quantumphysics;
 
+import com.ssau.tk.quantumphysics.models.Constants;
 import com.ssau.tk.quantumphysics.models.ProbabilityDensity;
-import com.ssau.tk.quantumphysics.models.TableModel;
+import com.ssau.tk.quantumphysics.models.ProbabilityTableModel;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -21,20 +22,25 @@ import java.util.List;
 
 public class ProbabilityDensityController {
 
-    private ObservableList<TableModel> ProbData = FXCollections.observableArrayList();
+    private final ObservableList<ProbabilityTableModel> ProbData = FXCollections.observableArrayList();
 
     @FXML
-    private TableView<TableModel> tableProb;
+    private TableView<ProbabilityTableModel> tableProb;
 
     @FXML
-    private TableColumn<TableModel, Double> angle;
+    private TableColumn<ProbabilityTableModel, Double> angle;
 
     @FXML
-    private TableColumn<TableModel, Double> prob;
+    private TableColumn<ProbabilityTableModel, Double> prob;
 
-    private final List<Double> angleList = ProbabilityDensity.getAngleList();
+    @FXML
+    private TableColumn<ProbabilityTableModel, Double> realProb;
 
-    private List<Double> probList = ProbabilityDensity.rutherford();
+    private final List<Double> angleList = Constants.probList;
+
+    private final List<Double> probList = ProbabilityDensity.rutherford(angleList);
+
+    private final List<Double> realProbList = Constants.realProbList;
 
     @FXML
     private void initialize() {
@@ -42,7 +48,8 @@ public class ProbabilityDensityController {
         // устанавливаем тип и значение которое должно хранится в колонке
         initData();
         angle.setCellValueFactory(new PropertyValueFactory<>("angle"));
-        prob.setCellValueFactory(new PropertyValueFactory<>("value"));
+        prob.setCellValueFactory(new PropertyValueFactory<>("prob"));
+        realProb.setCellValueFactory(new PropertyValueFactory<>("realProb"));
     }
     @FXML
     protected void getToMainWindow(ActionEvent event) throws IOException {
@@ -57,7 +64,7 @@ public class ProbabilityDensityController {
 
     private void initData() {
         for (int i = 0; i < angleList.size(); i++) {
-            ProbData.add(new TableModel(probList.get(i), angleList.get(i)));
+            ProbData.add(new ProbabilityTableModel(angleList.get(i), probList.get(i), realProbList.get(i)));
             tableProb.setItems(ProbData);
         }
     }
