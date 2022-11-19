@@ -8,17 +8,20 @@ public class ProbabilityTableModel {
 
     private double realProb;
 
-    public ProbabilityTableModel(double angle, double prob, double realProb) {
+    private double thompsonProb;
+
+    public ProbabilityTableModel(double angle, double rutherfordProb, double thompsonProb, double realProb) {
         this.angle = angle;
-        this.prob = prob;
+        this.prob = rutherfordProb;
         this.realProb = realProb;
+        this.thompsonProb = thompsonProb;
     }
 
     public double getAngle() {
         return angle;
     }
 
-    public double getProb() {
+    public double getRutherfordProb() {
         return prob;
     }
 
@@ -30,11 +33,19 @@ public class ProbabilityTableModel {
         this.angle = angle;
     }
 
-    public void setProb(double prob) {
+    public void setRutherfordProb(double prob) {
         this.prob = prob;
     }
 
     public void setRealProb(double realProb) {
         this.realProb = realProb;
+    }
+
+    public double getThompsonProb() {
+        return thompsonProb;
+    }
+
+    public void setThompsonProb(double thompsonProb) {
+        this.thompsonProb = thompsonProb;
     }
 }

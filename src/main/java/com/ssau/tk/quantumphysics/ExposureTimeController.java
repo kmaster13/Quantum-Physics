@@ -42,10 +42,11 @@ public class ExposureTimeController {
 
     private final List<Double> angleList = Constants.timeList;
 
-    private final List<Double> probList = ProbabilityDensity.rutherford(angleList);
+    private final List<Double> rutherfordProbList = ProbabilityDensity.rutherford(angleList);
+    private final List<Double> rutherfordTimeList = ExposureTime.angle(rutherfordProbList);
+    private final List<Double> thompsonProbList = ProbabilityDensity.thompson(angleList);
 
-    private final List<Double> timeList = ExposureTime.angle(probList);
-
+    private final List<Double> thompsonTimeList = ExposureTime.angle(thompsonProbList);
 
     @FXML
     private void initialize() {
@@ -74,7 +75,9 @@ public class ExposureTimeController {
 
     private void initData() {
         for (int i = 0; i < angleList.size(); i++) {
-            TimeData.add(new TimeTableModel(angleList.get(i), probList.get(i), timeList.get(i),0.0, 0.0));
+            TimeData.add(new TimeTableModel(
+                    angleList.get(i), rutherfordProbList.get(i), rutherfordTimeList.get(i),thompsonProbList.get(i), thompsonTimeList.get(i)
+            ));
             tableTime.setItems(TimeData);
         }
     }

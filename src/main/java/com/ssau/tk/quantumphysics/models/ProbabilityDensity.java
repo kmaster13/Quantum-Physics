@@ -23,4 +23,15 @@ public class ProbabilityDensity {
         }
         return newList;
     }
+
+    public static List<Double> thompson(List<Double> angles) {
+        List<Double> newList = new ArrayList<>(angles.size());
+
+        angles.forEach(angle -> {
+            double a = Math.toRadians(angle);
+            newList.add(Math.pow((Math.PI * O), -0.5) * Math.pow(Math.E, -1 * Math.pow(a, 2) / O));
+        });
+
+        return newList;
+    }
 }

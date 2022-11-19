@@ -31,16 +31,21 @@ public class ProbabilityDensityController {
     private TableColumn<ProbabilityTableModel, Double> angle;
 
     @FXML
-    private TableColumn<ProbabilityTableModel, Double> prob;
+    private TableColumn<ProbabilityTableModel, Double> rutherfordProb;
+
+    @FXML
+    private TableColumn<ProbabilityTableModel, Double> thompsonProb;
 
     @FXML
     private TableColumn<ProbabilityTableModel, Double> realProb;
 
     private final List<Double> angleList = Constants.probList;
 
-    private final List<Double> probList = ProbabilityDensity.rutherford(angleList);
+    private final List<Double> rutherfordPropList = ProbabilityDensity.rutherford(angleList);
 
+    private final List<Double> thompsonPropList = ProbabilityDensity.thompson(angleList);
     private final List<Double> realProbList = Constants.realProbList;
+
 
     @FXML
     private void initialize() {
@@ -48,8 +53,9 @@ public class ProbabilityDensityController {
         // устанавливаем тип и значение которое должно хранится в колонке
         initData();
         angle.setCellValueFactory(new PropertyValueFactory<>("angle"));
-        prob.setCellValueFactory(new PropertyValueFactory<>("prob"));
+        rutherfordProb.setCellValueFactory(new PropertyValueFactory<>("rutherfordProb"));
         realProb.setCellValueFactory(new PropertyValueFactory<>("realProb"));
+        thompsonProb.setCellValueFactory(new PropertyValueFactory<>("thompsonProb"));
     }
     @FXML
     protected void getToMainWindow(ActionEvent event) throws IOException {
@@ -64,7 +70,9 @@ public class ProbabilityDensityController {
 
     private void initData() {
         for (int i = 0; i < angleList.size(); i++) {
-            ProbData.add(new ProbabilityTableModel(angleList.get(i), probList.get(i), realProbList.get(i)));
+            ProbData.add(new ProbabilityTableModel(
+                    angleList.get(i), rutherfordPropList.get(i), thompsonPropList.get(i), realProbList.get(i)
+            ));
             tableProb.setItems(ProbData);
         }
     }
