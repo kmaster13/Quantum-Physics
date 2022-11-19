@@ -29,4 +29,15 @@ public class MenuController {
         stage.setScene(new Scene(root1));
         stage.show();
     }
+
+    @FXML
+    protected void onTompsonButtonClick(ActionEvent event) throws IOException {
+        URL resource = MenuController.class.getResource("tompson.fxml");
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(resource);
+        Parent root1 = fxmlLoader.load();
+        stage.setTitle("Томпсон");
+        stage.setScene(new Scene(root1));
+        stage.show();
+    }
 }

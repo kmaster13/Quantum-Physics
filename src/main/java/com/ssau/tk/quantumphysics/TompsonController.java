@@ -27,7 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class RezerfordController implements Initializable {
+public class TompsonController implements Initializable {
     private int i = 0;
     private int DEGREE;
 
@@ -87,6 +87,7 @@ public class RezerfordController implements Initializable {
         }
 
         if(isCorrect) {
+
             textField.clear();
 
             System.out.println(VALUE + " ," + DEGREE + " ," + RezerfordModel.angle(VALUE, DEGREE));
@@ -97,13 +98,13 @@ public class RezerfordController implements Initializable {
             list.add(new TableModel(values.get(i), angles.get(i)));
             table.setItems(list);
 
-            XYChart.Series series1 = new XYChart.Series();
-            series1.getData().add(new XYChart.Data(0, values.get(i)));
-            series1.getData().add(new XYChart.Data(1, values.get(i)));
-            series1.getData().add(new XYChart.Data(2, values.get(i)));
-            firstLineChart.getData().add(series1);
-
-            series.getData().add(new XYChart.Data(values.get(i), angles.get(i)));
+//            XYChart.Series series1 = new XYChart.Series();
+//            series1.getData().add(new XYChart.Data(0, values.get(i)));
+//            series1.getData().add(new XYChart.Data(1, values.get(i)));
+//            series1.getData().add(new XYChart.Data(2, values.get(i)));
+//            firstLineChart.getData().add(series1);
+//
+//            series.getData().add(new XYChart.Data(values.get(i), angles.get(i)));
             i++;
         }
     }
@@ -117,17 +118,17 @@ public class RezerfordController implements Initializable {
         angle.setCellValueFactory(new PropertyValueFactory<TableModel, Double>("angle"));
 
 
-        series = new XYChart.Series();
-        secondLineChart.getData().add(series);
+//        series = new XYChart.Series();
+//        secondLineChart.getData().add(series);
     }
 
     @FXML
     void getReboot(ActionEvent event) throws IOException {
-        URL resource = MenuController.class.getResource("rezerford.fxml");
+        URL resource = MenuController.class.getResource("tompson.fxml");
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(resource);
         Parent root1 = fxmlLoader.load();
-        stage.setTitle("Резерфорд");
+        stage.setTitle("Томпсон");
         stage.setScene(new Scene(root1));
         stage.show();
     }

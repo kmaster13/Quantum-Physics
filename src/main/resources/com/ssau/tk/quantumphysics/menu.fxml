@@ -2,10 +2,32 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" spacing="40.0" styleClass="background" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.MenuController">
    <children>
-      <Button mnemonicParsing="false" onAction="#onRezerfordButtonClick" prefHeight="100.0" prefWidth="1160.0" text="Резерфорд" />
-      <Button mnemonicParsing="false" onAction="#onExitButtonActionClick" prefHeight="100.0" prefWidth="1160.0" text="Выход" />
+      <Button maxHeight="100.0" maxWidth="1160.0" mnemonicParsing="false" onAction="#onTompsonButtonClick" prefHeight="100.0" text="Рассеяние на атоме Томпсона">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#onRezerfordButtonClick" prefHeight="100.0" prefWidth="1160.0" text="Рассеяние на атоме Резерфорда">
+         <font>
+            <Font size="41.0" />
+         </font></Button>
+      <Button maxHeight="100.0" maxWidth="1160.0" mnemonicParsing="false" prefHeight="100.0" text="Расчёт вероятностей рассеяния">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="1160.0" text="Оценка времени экспозиции">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#onExitButtonActionClick" prefHeight="100.0" prefWidth="1160.0" text="Выход">
+         <font>
+            <Font size="41.0" />
+         </font></Button>
    </children>
 </VBox>

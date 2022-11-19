@@ -8,6 +8,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -29,9 +30,19 @@
                         <Font size="33.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="textField" prefHeight="35.0" prefWidth="189.0" />
+                  <Pane prefHeight="200.0" prefWidth="170.0">
+                     <children>
+                        <Text fx:id="errorTextField" fill="RED" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="170.0" />
+                        <TextField fx:id="textField" layoutY="60.0" prefHeight="35.0" prefWidth="170.0" />
+                     </children>
+                  </Pane>
                   <ComboBox fx:id="comboBox" prefHeight="25.0" prefWidth="100.0" />
-                  <Button mnemonicParsing="false" onAction="#addToTable" text="Добавить в таблицу" />
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="errorComboBox" fill="RED" layoutX="18.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="161.0" />
+                        <Button layoutX="18.0" layoutY="60.0" mnemonicParsing="false" onAction="#addToTable" prefHeight="35.0" prefWidth="161.0" text="Добавить в таблицу" />
+                     </children>
+                  </Pane>
                </children>
             </HBox>
          </children></VBox>
@@ -53,9 +64,10 @@
                 <NumberAxis side="LEFT" />
               </yAxis>
             </LineChart>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0">
                <children>
-                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#getToMainWindow" text="Вернуться в меню" />
+                  <Button mnemonicParsing="false" onAction="#getReboot" prefHeight="50.0" prefWidth="170.0" text="Обновить" />
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#getToMainWindow" prefHeight="50.0" prefWidth="170.0" text="Вернуться в меню" />
                </children>
             </HBox>
          </children>
