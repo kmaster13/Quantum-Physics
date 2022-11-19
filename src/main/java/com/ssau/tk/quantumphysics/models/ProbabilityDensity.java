@@ -19,9 +19,14 @@ public class ProbabilityDensity {
                 newList.add(2 * Math.PI * L * n0 * Math.pow(10, 6) * Math.pow((k * Q1 * Q2) / (4 * E * evDj), 2)
                         * (Math.sin(a2) / Math.pow(Math.sin(a2 / 2), 4)));
             } else if (a >= 0 && a <= 6) {
-                System.out.println(a + " : " + Math.pow((Math.PI * O), -0.5) * Math.pow(Math.E, -1 * Math.pow(a2, 2) / O));
+                newList.add(Math.pow((Math.PI * O), -0.5) * Math.pow(Math.E, -1 * Math.pow(a2, 2) / O));
+//                System.out.println(a + " : " + Math.pow((Math.PI * O), -0.5) * Math.pow(Math.E, -1 * Math.pow(a2, 2) / O));
             }
         }
         return newList;
+    }
+
+    public static List<Double> getAngleList() {
+        return list;
     }
 }

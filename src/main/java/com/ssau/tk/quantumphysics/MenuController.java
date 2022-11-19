@@ -40,4 +40,25 @@ public class MenuController {
         stage.setScene(new Scene(root1));
         stage.show();
     }
+
+    @FXML
+    protected void onVerButtonClick(ActionEvent event) throws IOException {
+        URL resource = MenuController.class.getResource("Ver.fxml");
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(resource);
+        Parent root2 = fxmlLoader.load();
+        stage.setTitle("Резерфорд");
+        stage.setScene(new Scene(root2));
+        stage.show();
+    }
+    @FXML
+    protected void onTimeButtonClick(ActionEvent event) throws IOException {
+        URL resource = MenuController.class.getResource("Time.fxml");
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        FXMLLoader fxmlLoader = new FXMLLoader(resource);
+        Parent root2 = fxmlLoader.load();
+        stage.setTitle("Резерфорд");
+        stage.setScene(new Scene(root2));
+        stage.show();
+    }
 }

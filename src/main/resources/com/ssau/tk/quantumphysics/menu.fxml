@@ -15,12 +15,12 @@
          <font>
             <Font size="41.0" />
          </font></Button>
-      <Button maxHeight="100.0" maxWidth="1160.0" mnemonicParsing="false" prefHeight="100.0" text="Расчёт вероятностей рассеяния">
+      <Button maxHeight="100.0" onAction="#onVerButtonClick" maxWidth="1160.0" mnemonicParsing="false" prefHeight="100.0" text="Расчёт вероятностей рассеяния">
          <font>
             <Font size="41.0" />
          </font>
       </Button>
-      <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="1160.0" text="Оценка времени экспозиции">
+      <Button mnemonicParsing="false" onAction="#onTimeButtonClick" prefHeight="100.0" prefWidth="1160.0" text="Оценка времени экспозиции">
          <font>
             <Font size="41.0" />
          </font>

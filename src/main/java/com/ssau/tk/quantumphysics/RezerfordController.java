@@ -71,7 +71,7 @@ public class RezerfordController implements Initializable {
     @FXML
     protected void addToTable() {
         isCorrect = true;
-        if(i != 0 && DEGREE != comboBox.getValue()){
+        if (i != 0 && DEGREE != comboBox.getValue()) {
             errorComboBox.setText("Выбрана другая степень!");
             isCorrect = false;
         } else {
@@ -81,12 +81,12 @@ public class RezerfordController implements Initializable {
         try {
             VALUE = Double.parseDouble(textField.getText());
             errorTextField.setText("");
-        } catch (Exception e){
+        } catch (Exception e) {
             errorTextField.setText("В поле введено неизвестное значение!");
             isCorrect = false;
         }
 
-        if(isCorrect) {
+        if (isCorrect) {
             textField.clear();
 
             System.out.println(VALUE + " ," + DEGREE + " ," + RezerfordModel.angle(VALUE, DEGREE));
@@ -110,11 +110,11 @@ public class RezerfordController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        comboBox.setItems(FXCollections.observableArrayList(-9,-12));
+        comboBox.setItems(FXCollections.observableArrayList(-9, -12));
         comboBox.setValue(-9);
 
-        value.setCellValueFactory(new PropertyValueFactory<TableModel, Double>("value"));
-        angle.setCellValueFactory(new PropertyValueFactory<TableModel, Double>("angle"));
+        value.setCellValueFactory(new PropertyValueFactory<>("value"));
+        angle.setCellValueFactory(new PropertyValueFactory<>("angle"));
 
 
         series = new XYChart.Series();
@@ -131,6 +131,7 @@ public class RezerfordController implements Initializable {
         stage.setScene(new Scene(root1));
         stage.show();
     }
+
     @FXML
     protected void getToMainWindow(ActionEvent event) throws IOException {
         URL resource = MenuController.class.getResource("menu.fxml");
