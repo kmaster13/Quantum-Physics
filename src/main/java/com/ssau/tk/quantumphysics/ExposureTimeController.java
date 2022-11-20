@@ -36,9 +36,9 @@ public class ExposureTimeController {
     private TableColumn<TimeTableModel, Double> AngleColumn;
 
     @FXML
-    private TableColumn<TimeTableModel, Double> newListRezColumn;
+    private TableColumn<TimeTableModel, Double> probRezColumn;
     @FXML
-    private TableColumn<TimeTableModel, Double> newListTompColumn;
+    private TableColumn<TimeTableModel, Double> probTompColumn;
 
     private final List<Double> angleList = Constants.timeList;
 
@@ -50,16 +50,8 @@ public class ExposureTimeController {
 
     @FXML
     private void initialize() {
-
-        // устанавливаем тип и значение которое должно хранится в колонке
         initData();
-        AngleColumn.setCellValueFactory(new PropertyValueFactory<>("angle"));
-        timeRezColumn.setCellValueFactory(new PropertyValueFactory<>("timeRuther"));
-        timeTompColumn.setCellValueFactory(new PropertyValueFactory<>("timeTomp"));
-        newListRezColumn.setCellValueFactory(new PropertyValueFactory<>("probRuther"));
-        newListTompColumn.setCellValueFactory(new PropertyValueFactory<>("probTomp"));
-        tableTime.setItems(TimeData);
-
+        initColumns();
     }
 
     @FXML
@@ -73,10 +65,18 @@ public class ExposureTimeController {
         stage.show();
     }
 
+    private void initColumns() {
+        AngleColumn.setCellValueFactory(new PropertyValueFactory<>("angle"));
+        timeRezColumn.setCellValueFactory(new PropertyValueFactory<>("timeRuther"));
+        timeTompColumn.setCellValueFactory(new PropertyValueFactory<>("timeTomp"));
+        probRezColumn.setCellValueFactory(new PropertyValueFactory<>("probRuther"));
+        probTompColumn.setCellValueFactory(new PropertyValueFactory<>("probTomp"));
+    }
+
     private void initData() {
         for (int i = 0; i < angleList.size(); i++) {
             TimeData.add(new TimeTableModel(
-                    angleList.get(i), rutherfordProbList.get(i), rutherfordTimeList.get(i),thompsonProbList.get(i), thompsonTimeList.get(i)
+                    angleList.get(i), rutherfordProbList.get(i), rutherfordTimeList.get(i), thompsonProbList.get(i), thompsonTimeList.get(i)
             ));
             tableTime.setItems(TimeData);
         }
