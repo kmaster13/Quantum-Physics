@@ -77,6 +77,7 @@ public class RezerfordController implements Initializable {
         } else {
             DEGREE = comboBox.getValue();
             errorComboBox.setText("");
+            firstLineChart.getData().clear();
         }
         try {
             VALUE = Double.parseDouble(textField.getText());
@@ -97,25 +98,33 @@ public class RezerfordController implements Initializable {
             list.add(new TableModel(values.get(i), angles.get(i)));
             table.setItems(list);
 
-            XYChart.Series series1 = new XYChart.Series();
-            series1.getData().add(new XYChart.Data(0, values.get(i)));
-            series1.getData().add(new XYChart.Data(1, values.get(i)));
-            //TODO точки строятся в другом порядке
-            if(angles.get(i)>0 && angles.get(i) < 90) {
-                series1.getData().add(new XYChart.Data(2, values.get(i) + Math.abs(Math.sin(angles.get(i)))));
-            } else if(angles.get(i) > 90 && angles.get(i) < 180) {
-                series1.getData().add(new XYChart.Data(0, values.get(i) + Math.abs(Math.sin(angles.get(i)))));
-            } else {
-                series1.getData().add(new XYChart.Data(1, values.get(i) + 1));
-            }
-
-            firstLineChart.getData().add(series1);
+            newGraph();
 
             series.getData().add(new XYChart.Data(values.get(i), angles.get(i)));
             i++;
         }
     }
 
+    private void newGraph(){
+        XYChart.Series series1 = new XYChart.Series();
+        series1.getData().add(new XYChart.Data(0, values.get(i)));
+        series1.getData().add(new XYChart.Data(1, values.get(i)));
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        //TODO точки строятся в другом порядке
+        if(angles.get(i)>0 && angles.get(i) < 90) {
+            series1.getData().add(new XYChart.Data(2, values.get(i) + Math.abs(Math.sin(angles.get(i)))));
+        } else if(angles.get(i) > 90 && angles.get(i) < 180) {
+            series1.getData().add(new XYChart.Data(0, values.get(i) + Math.abs(Math.sin(angles.get(i)))));
+        } else {
+            series1.getData().add(new XYChart.Data(1, values.get(i) + 1));
+        }
+
+        firstLineChart.getData().add(series1);
+    }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         comboBox.setItems(FXCollections.observableArrayList(-9, -12));
