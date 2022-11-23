@@ -13,9 +13,9 @@
         <columns>
             <!-- Колонки таблицы -->
             <TableColumn fx:id="AngleColumn" prefWidth="200.0" text="Angle" />
-            <TableColumn fx:id="newListRezColumn" prefWidth="200.0" text="ProbRuther" />
+            <TableColumn fx:id="probRezColumn" prefWidth="200.0" text="ProbRuther" />
             <TableColumn fx:id="timeRezColumn" prefWidth="200.0" text="TimeRuther" />
-            <TableColumn fx:id="newListTompColumn" prefWidth="200.0" text="ProbTomp" />
+            <TableColumn fx:id="probTompColumn" prefWidth="200.0" text="ProbTomp" />
             <TableColumn fx:id="timeTompColumn" prefWidth="200.0" text="TimeTomp" />
         </columns>
     </TableView>

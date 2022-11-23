@@ -2,14 +2,12 @@ package com.ssau.tk.quantumphysics;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.net.URL;
+
+import static com.ssau.tk.quantumphysics.ControllerUtils.setWindow;
 
 public class MenuController {
 
@@ -21,44 +19,20 @@ public class MenuController {
 
     @FXML
     protected void onRezerfordButtonClick(ActionEvent event) throws IOException {
-        URL resource = MenuController.class.getResource("rezerford.fxml");
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(resource);
-        Parent root1 = fxmlLoader.load();
-        stage.setTitle("Резерфорд");
-        stage.setScene(new Scene(root1));
-        stage.show();
+        setWindow("rezerford.fxml", event, "Резерфорд");
     }
 
     @FXML
     protected void onTompsonButtonClick(ActionEvent event) throws IOException {
-        URL resource = MenuController.class.getResource("tompson.fxml");
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(resource);
-        Parent root1 = fxmlLoader.load();
-        stage.setTitle("Томпсон");
-        stage.setScene(new Scene(root1));
-        stage.show();
+        setWindow("tompson.fxml", event, "Томпсон");
     }
 
     @FXML
     protected void onVerButtonClick(ActionEvent event) throws IOException {
-        URL resource = MenuController.class.getResource("Ver.fxml");
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(resource);
-        Parent root2 = fxmlLoader.load();
-        stage.setTitle("Резерфорд");
-        stage.setScene(new Scene(root2));
-        stage.show();
+        setWindow("Ver.fxml", event, "Вероятность");
     }
     @FXML
     protected void onTimeButtonClick(ActionEvent event) throws IOException {
-        URL resource = MenuController.class.getResource("Time.fxml");
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(resource);
-        Parent root2 = fxmlLoader.load();
-        stage.setTitle("Резерфорд");
-        stage.setScene(new Scene(root2));
-        stage.show();
+        setWindow("Time.fxml", event, "Резерфорд");
     }
 }

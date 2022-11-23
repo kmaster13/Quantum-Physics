@@ -6,11 +6,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.ComboBox;
@@ -19,13 +15,14 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.Text;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
+
+import static com.ssau.tk.quantumphysics.ControllerUtils.setWindow;
 
 public class RezerfordController implements Initializable {
     private int i = 0;
@@ -140,23 +137,11 @@ public class RezerfordController implements Initializable {
 
     @FXML
     void getReboot(ActionEvent event) throws IOException {
-        URL resource = MenuController.class.getResource("rezerford.fxml");
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(resource);
-        Parent root1 = fxmlLoader.load();
-        stage.setTitle("Резерфорд");
-        stage.setScene(new Scene(root1));
-        stage.show();
+        setWindow("rezerford.fxml", event, "Резерфорд");
     }
 
     @FXML
     protected void getToMainWindow(ActionEvent event) throws IOException {
-        URL resource = MenuController.class.getResource("menu.fxml");
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        FXMLLoader fxmlLoader = new FXMLLoader(resource);
-        Parent root1 = fxmlLoader.load();
-        stage.setTitle("Меню");
-        stage.setScene(new Scene(root1));
-        stage.show();
+        setWindow("menu.fxml", event, "Меню");
     }
 }
