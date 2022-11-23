@@ -100,7 +100,15 @@ public class RezerfordController implements Initializable {
             XYChart.Series series1 = new XYChart.Series();
             series1.getData().add(new XYChart.Data(0, values.get(i)));
             series1.getData().add(new XYChart.Data(1, values.get(i)));
-            series1.getData().add(new XYChart.Data(2, values.get(i)));
+            //TODO точки строятся в другом порядке
+            if(angles.get(i)>0 && angles.get(i) < 90) {
+                series1.getData().add(new XYChart.Data(2, values.get(i) + Math.abs(Math.sin(angles.get(i)))));
+            } else if(angles.get(i) > 90 && angles.get(i) < 180) {
+                series1.getData().add(new XYChart.Data(0, values.get(i) + Math.abs(Math.sin(angles.get(i)))));
+            } else {
+                series1.getData().add(new XYChart.Data(1, values.get(i) + 1));
+            }
+
             firstLineChart.getData().add(series1);
 
             series.getData().add(new XYChart.Data(values.get(i), angles.get(i)));
