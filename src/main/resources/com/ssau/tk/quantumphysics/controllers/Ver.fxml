@@ -4,12 +4,12 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="677.0" prefWidth="1081.0" styleClass="background" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.ProbabilityDensityController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="background" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.controllers.ProbabilityDensityController">
     <HBox alignment="CENTER" prefHeight="75.0" prefWidth="1000.0">
         <Button alignment="CENTER" mnemonicParsing="false" onAction="#getToMainWindow" text="Вернуться в меню" />
     </HBox>
     <!-- Таблица в которую мы будем выводит наш pojo -->
-    <TableView fx:id="tableProb" layoutX="12.0" layoutY="62.0" prefHeight="600" prefWidth="1060.0">
+    <TableView fx:id="tableProb" layoutX="12.0" layoutY="62.0" prefHeight="729.0" prefWidth="1176.0">
         <columns>
             <!-- Колонки таблицы -->
             <TableColumn fx:id="angle" prefWidth="300.0" text="Angle" />

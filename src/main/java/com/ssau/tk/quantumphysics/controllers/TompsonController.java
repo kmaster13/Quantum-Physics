@@ -1,4 +1,4 @@
-package com.ssau.tk.quantumphysics;
+package com.ssau.tk.quantumphysics.controllers;
 
 import com.ssau.tk.quantumphysics.models.RezerfordModel;
 import com.ssau.tk.quantumphysics.models.TableModel;
@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-import static com.ssau.tk.quantumphysics.ControllerUtils.setWindow;
+import static com.ssau.tk.quantumphysics.controllers.ControllerUtils.setWindow;
 
 public class TompsonController implements Initializable {
     private int i = 0;

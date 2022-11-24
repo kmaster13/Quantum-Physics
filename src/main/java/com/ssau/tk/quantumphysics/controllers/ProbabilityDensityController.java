@@ -1,4 +1,4 @@
-package com.ssau.tk.quantumphysics;
+package com.ssau.tk.quantumphysics.controllers;
 
 import com.ssau.tk.quantumphysics.models.Constants;
 import com.ssau.tk.quantumphysics.models.ProbabilityDensity;
@@ -14,7 +14,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import java.io.IOException;
 import java.util.List;
 
-import static com.ssau.tk.quantumphysics.ControllerUtils.setWindow;
+import static com.ssau.tk.quantumphysics.controllers.ControllerUtils.setWindow;
 
 public class ProbabilityDensityController {
 

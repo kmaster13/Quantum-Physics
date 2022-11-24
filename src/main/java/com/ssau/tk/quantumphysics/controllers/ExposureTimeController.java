@@ -1,4 +1,4 @@
-package com.ssau.tk.quantumphysics;
+package com.ssau.tk.quantumphysics.controllers;
 
 import com.ssau.tk.quantumphysics.models.Constants;
 import com.ssau.tk.quantumphysics.models.ExposureTime;

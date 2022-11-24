@@ -1,4 +1,4 @@
-package com.ssau.tk.quantumphysics;
+package com.ssau.tk.quantumphysics.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-import static com.ssau.tk.quantumphysics.ControllerUtils.setWindow;
+import static com.ssau.tk.quantumphysics.controllers.ControllerUtils.setWindow;
 
 public class MenuController {
 

@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Text?>
 <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
       prefHeight="800.0" prefWidth="1200.0" styleClass="background" xmlns="http://javafx.com/javafx/19"
-      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.RezerfordController">
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.controllers.RezerfordController">
     <VBox alignment="CENTER" prefHeight="800.0" prefWidth="600.0" spacing="40.0">
         <TableView fx:id="table" maxWidth="560.0" prefHeight="560.0" prefWidth="560.0">
             <columns>
