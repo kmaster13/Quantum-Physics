@@ -18,6 +18,11 @@ public class MenuController {
     }
 
     @FXML
+    protected void onIntroductionButtonClick(ActionEvent event) throws IOException {
+        setWindow("introduction.fxml", event, "Введение");
+    }
+
+    @FXML
     protected void onRezerfordButtonClick(ActionEvent event) throws IOException {
         setWindow("rezerford.fxml", event, "Резерфорд");
     }

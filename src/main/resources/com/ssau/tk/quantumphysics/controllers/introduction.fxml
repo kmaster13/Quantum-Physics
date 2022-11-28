@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="1200.0" spacing="40.0" styleClass="background" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.controllers.Introduction">
+    <Pane prefHeight="930.0" prefWidth="1200.0">
+        <Label layoutX="14.0" layoutY="6.0" prefHeight="42.0" prefWidth="719.0" style="-fx-font-weight: bold" text="${'Предлагаемая программа предоставит Вам инструменты для исследования:\nмысленный эксперемент и вычислительный аппарат.'}" />
+        <Label layoutX="13.0" layoutY="66.0" prefHeight="20.0" prefWidth="154.0" style="-fx-text-fill: red; -fx-font-weight: bold" text="Ваша задача:" />
+        <Label layoutX="13.0" layoutY="86.0" prefHeight="42.0" prefWidth="1175.0" text="${'Используя метод зондирования вещества быстрыми альфа-частицами, установить,\nкакая из двух альтернативных моделей атома - Томсона или Резерфорда, - соответствует результатам реального эксперемента.'}" />
+        <Label layoutX="13.0" layoutY="128.0" prefHeight="20.0" prefWidth="154.0" style="-fx-text-fill: red; -fx-font-weight: bold" text="Объект исследования:" />
+        <Label layoutX="14.0" layoutY="148.0" prefHeight="10.0" prefWidth="975.0" text="${'Тонкая мишень, состоящая из многих гипотетических атомов (10^4 атомных слоёв) соответственно Томсона и Резерфорда'}" />
+        <Label layoutX="14.0" layoutY="165.0" prefHeight="20.0" prefWidth="154.0" style="-fx-text-fill: red; -fx-font-weight: bold" text="Метод исследования:" />
+        <Label layoutX="14.0" layoutY="185.0" text="Бомбардировка альфа-частицами. Анализ угловых распределений." />
+        <Label layoutX="14.0" layoutY="202.0" prefHeight="20.0" prefWidth="154.0" style="-fx-text-fill: red; -fx-font-weight: bold" text="Условия эксперемента:" />
+        <Label layoutX="14.0" layoutY="222.0" prefHeight="34.0" prefWidth="765.0" text="${'Энергия альфа-частиц E = 5 МэВ. Толщина мишени L = 1 мкм.\nМатериал мишени - золото (Z = 79), концентрация атомов - n = 5.9 * 10^22 см^-3'}" />
+        <Label layoutX="14.0" layoutY="256.0" prefHeight="20.0" prefWidth="154.0" style="-fx-text-fill: red; -fx-font-weight: bold" text="План исследований:" />
+        <Label layoutX="14.0" layoutY="276.0" prefHeight="34.0" prefWidth="728.0" text="${'1. Познакомьтесь предварительно с возможностями программы\n2. Составьте СВОЙ ПЛАН ИССЛЕДОВАНИЙ проблемы и сравните с планом, предлагаемым нами'}" />
+        <Label layoutX="14.0" layoutY="310.0" prefHeight="20.0" prefWidth="154.0" style="-fx-text-fill: red; -fx-font-weight: bold" text="Наш план исследований:" />
+        <Label layoutX="14.0" layoutY="330.0" prefHeight="134.0" prefWidth="854.0" text="${'1. Исследовать рассеяние на отдельных атомах:\n         \tа) На атомах Томсона изучить зависимость прицельного параметра как функцию угла рассеяния: b = f(тетта). Определить тетта(max)\n         \tб)На атомах Резерфорда изучить зависимость прицельного параметра как функцию угла рассеяния: b = f(тетта). Определить тетта(max)\n2. Изучить характер движения частицы в многоатомных мишенях Томсона и в мишенях Резерфорда\n3. Исследовать роль многократных столкновений в мишенях Томсона и мишенях Резерфорда, \nих вклад в вероятность рассеяния под разными углами\n4. Рассчитать вероятность угловых распределений и сравнить с эксперементальными результатами\n5. Оценить среднее время ожидания рассеяния альфа-частицы на углы тетта = 15 и тетта = 170 в мишенях обоих типов.'}" />
+      <Button onAction="#onMenuButtonAction" layoutX="14.0" layoutY="774.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="146.0" text="В меню" />
+    </Pane>
+</VBox>
