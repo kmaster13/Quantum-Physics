@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1378.0" styleClass="background" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.controllers.RezerfordController">
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" styleClass="background" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.controllers.RezerfordController">
     <VBox alignment="CENTER" prefHeight="800.0" prefWidth="600.0" spacing="40.0">
         <TableView fx:id="table" maxWidth="560.0" prefHeight="560.0" prefWidth="560.0">
             <columns>
@@ -52,13 +52,13 @@
             <Button alignment="CENTER" mnemonicParsing="false" onAction="#getToMainWindow" prefHeight="50.0" prefWidth="170.0" text="Вернуться в меню" />
         </HBox>
     </VBox>
-   <Pane prefHeight="800.0" prefWidth="269.0">
-       <Label text="Поставим мысленный эксперемент:" />
-       <Label layoutY="20.0" text="бомбардировка атома альфа-частицами." />
-       <Label layoutY="40.0" text="Задавая различные значения прицельного" />
-       <Label layoutY="60.0" text="параметра, производите запуск" />
-       <Label layoutY="80.0" text="альфа-частиц. Вы увидите их траектории." />
-       <Label layoutY="100.0" text="Проанализируйте значения углов" />
-       <Label layoutY="120.0" text="рассеяния и определите тетта(max)" />
+   <Pane prefHeight="800.0" prefWidth="270.0">
+       <Label layoutY="20.0" text="Поставим мысленный эксперемент:" />
+       <Label layoutY="40.0" text="бомбардировка атома альфа-частицами." />
+       <Label layoutY="60.0" text="Задавая различные значения прицельного" />
+       <Label layoutY="80.0" text="параметра, производите запуск" />
+       <Label layoutY="100.0" text="альфа-частиц. Вы увидите их траектории." />
+       <Label layoutY="120.0" text="Проанализируйте значения углов" />
+       <Label layoutY="140.0" text="рассеяния и определите тетта(max)" />
    </Pane>
 </HBox>
