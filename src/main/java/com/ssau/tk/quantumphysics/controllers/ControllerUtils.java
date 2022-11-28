@@ -1,4 +1,4 @@
-package com.ssau.tk.quantumphysics;
+package com.ssau.tk.quantumphysics.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
