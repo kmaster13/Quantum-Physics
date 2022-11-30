@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="background" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.controllers.ExposureTimeController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" styleClass="background" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.controllers.ExposureTimeController">
     <HBox alignment="CENTER" prefHeight="75.0" prefWidth="1000.0">
         <Button alignment="CENTER" mnemonicParsing="false" onAction="#getToMainWindow" text="Вернуться в меню" />
     </HBox>
@@ -24,4 +24,9 @@
             <Font name="Verdana" size="24.0" />
         </font>
     </Label>
+    <Pane layoutX="1022.0" layoutY="61.0" prefHeight="728.0" prefWidth="374.0">
+        <Label prefHeight="42.0" prefWidth="374.0" text="Срденее время ожидания ОДНОЙ альфа-частицы, рассеяной в интервал углов от тетта до тетта + дельтаТетта" wrapText="true" />
+        <Label layoutY="42.0" text="дельта(t) = 1/(J * W(tetta) * дультаТетта)" />
+        <Label layoutY="59.0" prefHeight="69.0" prefWidth="374.0" text="Для обычного лабораторного источника J = 10^3 частиц в секунду. Применим угловой размер детектора дельтаТетта = 1. Используем значения W(тетта), полученные ранее, можно оценить величину дельта(t)" wrapText="true" />
+    </Pane>
 </AnchorPane>
