@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="background" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.controllers.ProbabilityDensityController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" styleClass="background" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.controllers.ProbabilityDensityController">
     <HBox alignment="CENTER" prefHeight="75.0" prefWidth="1000.0">
         <Button alignment="CENTER" mnemonicParsing="false" onAction="#getToMainWindow" text="Вернуться в меню" />
     </HBox>
@@ -23,4 +23,22 @@
             <Font name="Verdana" size="24.0" />
         </font>
     </Label>
+    <Pane fx:id="thompsonText" layoutX="1196.0" layoutY="65.0" prefHeight="366.0" prefWidth="204.0">
+        <Label layoutY="-8.0" style="-fx-font-weight: bold; -fx-text-fill: red" text="Мишень Томсона:" />
+        <Label layoutY="6.0" prefHeight="104.0" prefWidth="204.0" text="Оцените масимально возможную плотность вероятности W(тетта) рассеяния альфа-частиц, вылетающих из мишени Томсона под углом тетта. ДельтаJ - число частиц за 1 секунду" wrapText="true" />
+        <Label layoutY="110.0" style="-fx-font-weight: bold" text="Воспользуемся формулой Гаусса:" />
+        <Label layoutY="127.0" text="*Формула*" />
+        <Label layoutY="144.0" prefHeight="222.0" prefWidth="199.0" text="где N - число столкновений, примерно равное числу атомных слоев. tetta(ср) - средний квадрат угла отклонения в однократных столкновениях. Для оценкуи сверху можно принять: (tetta(ср)^1.2 меньше tetta(max). Рассчитайте W(тетта) для тетта = 10 и введите в компьютер. Остальные значения вам выдаст программа. Расчет возможен для значений в пределах от 10 до 180. Напоминаем: N = 10^4, tetta(max) = 0.026" wrapText="true" />
+    </Pane>
+    <Pane fx:id="rutherfordText" layoutX="1196.0" layoutY="65.0" prefHeight="366.0" prefWidth="204.0" visible="false">
+        <Label layoutY="-8.0" style="-fx-font-weight: bold; -fx-text-fill: red" text="Мишень Резерфорда:" />
+        <Label layoutY="6.0" prefHeight="104.0" prefWidth="204.0" text="а) Для углов между 0 и 6 расчет плотности вероятности W(тетта) рассеяния альфа частиц, вылетающих из мишени Резерфорда под углом тетта ведется по формуле Гаусса" wrapText="true" />
+        <Label layoutY="110.0" style="-fx-font-weight: bold" text="Воспользуемся формулой Гаусса:" />
+        <Label layoutY="127.0" text="*Формула*" />
+        <Label layoutY="144.0" prefHeight="123.0" prefWidth="199.0" text="здесь дельтаJ - число частиц, падающих на мишень в 1 секунду, N - число столкновений, примерно равное числу атомных слоев. Из эксперемента известно, что (тетта(ср)^2)^1/2 составляет около 2.5" wrapText="true" />
+        <Label layoutY="261.0" prefHeight="40.0" prefWidth="199.0" text="б) Для углов между 10 и 180 расчет ведется по формуле Резерфорда:" wrapText="true" />
+        <Label layoutX="-7.0" layoutY="301.0" text="*Формула*" />
+        <Label layoutX="1188.0" layoutY="383.0" prefHeight="134.0" prefWidth="204.0" text="Рассчитайте W(тетта) для тетта = 10 и введите в компьютер. Остальные значения вам выдаст программа. Расчет возможен для значений в пределах от 10 до 180. Напоминаем: n0 = 5.9*10^22 см^-3, L = 1мкм, E = 5МэВ, Z = 79, e = 4.8*10^-10 CGSE." wrapText="true" />
+    </Pane>
+    <Button fx:id="switchButton" layoutX="1196.0" layoutY="739.0" mnemonicParsing="false" onAction="#switchText" prefHeight="52.0" prefWidth="199.0" text="Мишень Резерфорда" />
 </AnchorPane>

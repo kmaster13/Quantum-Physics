@@ -7,9 +7,11 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.Pane;
 
 import java.io.IOException;
 import java.util.List;
@@ -19,6 +21,15 @@ import static com.ssau.tk.quantumphysics.controllers.ControllerUtils.setWindow;
 public class ProbabilityDensityController {
 
     private final ObservableList<ProbabilityTableModel> ProbData = FXCollections.observableArrayList();
+
+    @FXML
+    private Pane thompsonText;
+
+    @FXML
+    private Pane rutherfordText;
+
+    @FXML
+    private Button switchButton;
 
     @FXML
     private TableView<ProbabilityTableModel> tableProb;
@@ -47,6 +58,19 @@ public class ProbabilityDensityController {
     private void initialize() {
         initData();
         initColumns();
+    }
+
+    @FXML
+    protected void switchText() {
+        if (switchButton.getText().equals("Мишень Резерфорда")) {
+            thompsonText.setVisible(false);
+            rutherfordText.setVisible(true);
+            switchButton.setText("Мишень Томсона");
+        } else if (switchButton.getText().equals("Мишень Томсона")) {
+            thompsonText.setVisible(true);
+            rutherfordText.setVisible(false);
+            switchButton.setText("Мишень Резерфорда");
+        }
     }
 
     @FXML
