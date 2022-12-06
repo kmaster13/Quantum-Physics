@@ -34,10 +34,10 @@ public class MenuController {
 
     @FXML
     protected void onVerButtonClick(ActionEvent event) throws IOException {
-        setWindow("Ver.fxml", event, "Вероятность");
+        setWindow("ver.fxml", event, "Вероятность");
     }
     @FXML
     protected void onTimeButtonClick(ActionEvent event) throws IOException {
-        setWindow("Time.fxml", event, "Резерфорд");
+        setWindow("time.fxml", event, "Резерфорд");
     }
 }

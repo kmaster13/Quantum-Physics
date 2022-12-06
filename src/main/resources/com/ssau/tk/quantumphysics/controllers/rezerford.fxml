@@ -59,12 +59,12 @@
         </HBox>
     </VBox>
     <Pane prefHeight="800.0" prefWidth="270.0">
-        <Label layoutY="20.0" text="Поставим мысленный эксперемент:"/>
+        <Label layoutY="20.0" text="Поставим мысленный эксперимент:"/>
         <Label layoutY="40.0" text="бомбардировка атома альфа-частицами."/>
         <Label layoutY="60.0" text="Задавая различные значения прицельного"/>
         <Label layoutY="80.0" text="параметра, производите запуск"/>
         <Label layoutY="100.0" text="альфа-частиц. Вы увидите их траектории."/>
         <Label layoutY="120.0" text="Проанализируйте значения углов"/>
-        <Label layoutY="140.0" text="рассеяния и определите тетта(max)"/>
+        <Label layoutY="140.0" text="рассеяния и определите Θ(max)"/>
     </Pane>
 </HBox>
