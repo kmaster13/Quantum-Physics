@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-import static com.ssau.tk.quantumphysics.ControllerUtils.setWindow;
+import static com.ssau.tk.quantumphysics.SecondLabControllerUtils.setWindow;
 
 public class MenuController {
     @FXML
@@ -18,6 +18,6 @@ public class MenuController {
 
     @FXML
     protected void onIntroductionButtonClick(ActionEvent event) throws IOException {
-        setWindow("introduction.fxml", event, "Введение");
+        setWindow("introduction2.fxml", event, "Введение");
     }
 }

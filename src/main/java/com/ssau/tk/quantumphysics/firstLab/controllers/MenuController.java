@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-import static com.ssau.tk.quantumphysics.ControllerUtils.setWindow;
+import static com.ssau.tk.quantumphysics.FirstLabControllerUtils.setWindow;
 
 public class MenuController {
 

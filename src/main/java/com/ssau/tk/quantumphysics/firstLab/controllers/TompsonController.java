@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-import static com.ssau.tk.quantumphysics.ControllerUtils.setWindow;
+import static com.ssau.tk.quantumphysics.FirstLabControllerUtils.setWindow;
 
 public class TompsonController implements Initializable {
     private int i = 0;

@@ -5,7 +5,7 @@ import javafx.fxml.FXML;
 
 import java.io.IOException;
 
-import static com.ssau.tk.quantumphysics.ControllerUtils.setWindow;
+import static com.ssau.tk.quantumphysics.SecondLabControllerUtils.setWindow;
 
 public class IntroductionController {
     @FXML

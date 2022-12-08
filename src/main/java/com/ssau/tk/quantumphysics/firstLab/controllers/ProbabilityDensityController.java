@@ -16,7 +16,7 @@ import javafx.scene.layout.Pane;
 import java.io.IOException;
 import java.util.List;
 
-import static com.ssau.tk.quantumphysics.ControllerUtils.setWindow;
+import static com.ssau.tk.quantumphysics.FirstLabControllerUtils.setWindow;
 
 public class ProbabilityDensityController {
 
