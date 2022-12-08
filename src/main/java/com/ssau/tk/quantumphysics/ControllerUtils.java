@@ -1,5 +1,6 @@
-package com.ssau.tk.quantumphysics.controllers;
+package com.ssau.tk.quantumphysics;
 
+import com.ssau.tk.quantumphysics.firstLab.controllers.MenuController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -16,7 +17,7 @@ public class ControllerUtils {
         URL resource = MenuController.class.getResource(fileName);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(resource);
-        Parent root2 = fxmlLoader.load();
+        Parent root2 = fxmlLoader.<Parent>load();
         stage.setTitle(title);
         stage.setScene(new Scene(root2));
         stage.show();

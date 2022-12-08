@@ -3,8 +3,12 @@ module com.ssau.tk.quantumphysics {
     requires javafx.fxml;
 
 
-    opens com.ssau.tk.quantumphysics.models to javafx.fxml;
-    exports com.ssau.tk.quantumphysics.models;
-    exports com.ssau.tk.quantumphysics.controllers;
-    opens com.ssau.tk.quantumphysics.controllers to javafx.fxml;
+    opens com.ssau.tk.quantumphysics.firstLab.models to javafx.fxml;
+    exports com.ssau.tk.quantumphysics.firstLab.models;
+    exports com.ssau.tk.quantumphysics.firstLab.controllers;
+    opens com.ssau.tk.quantumphysics.firstLab.controllers to javafx.fxml;
+    exports com.ssau.tk.quantumphysics;
+    opens com.ssau.tk.quantumphysics to javafx.fxml;
+    exports com.ssau.tk.quantumphysics.secondLab.controllers;
+    opens com.ssau.tk.quantumphysics.secondLab.controllers to javafx.fxml;
 }

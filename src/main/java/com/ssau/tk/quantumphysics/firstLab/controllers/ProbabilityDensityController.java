@@ -1,8 +1,8 @@
-package com.ssau.tk.quantumphysics.controllers;
+package com.ssau.tk.quantumphysics.firstLab.controllers;
 
-import com.ssau.tk.quantumphysics.models.Constants;
-import com.ssau.tk.quantumphysics.models.ProbabilityDensity;
-import com.ssau.tk.quantumphysics.models.ProbabilityTableModel;
+import com.ssau.tk.quantumphysics.firstLab.models.Constants;
+import com.ssau.tk.quantumphysics.firstLab.models.ProbabilityDensity;
+import com.ssau.tk.quantumphysics.firstLab.models.ProbabilityTableModel;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -16,7 +16,7 @@ import javafx.scene.layout.Pane;
 import java.io.IOException;
 import java.util.List;
 
-import static com.ssau.tk.quantumphysics.controllers.ControllerUtils.setWindow;
+import static com.ssau.tk.quantumphysics.ControllerUtils.setWindow;
 
 public class ProbabilityDensityController {
 
@@ -75,7 +75,7 @@ public class ProbabilityDensityController {
 
     @FXML
     protected void getToMainWindow(ActionEvent event) throws IOException {
-        setWindow("menu.fxml", event, "Меню");
+        setWindow("menu1.fxml", event, "Меню");
     }
 
     private void initColumns() {

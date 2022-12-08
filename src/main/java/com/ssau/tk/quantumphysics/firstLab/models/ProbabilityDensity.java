@@ -1,9 +1,9 @@
-package com.ssau.tk.quantumphysics.models;
+package com.ssau.tk.quantumphysics.firstLab.models;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.ssau.tk.quantumphysics.models.Constants.*;
+import static com.ssau.tk.quantumphysics.firstLab.models.Constants.*;
 
 public class ProbabilityDensity {
 

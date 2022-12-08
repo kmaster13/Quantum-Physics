@@ -1,6 +1,6 @@
-package com.ssau.tk.quantumphysics.models;
+package com.ssau.tk.quantumphysics.firstLab.models;
 
-import static com.ssau.tk.quantumphysics.models.Constants.*;
+import static com.ssau.tk.quantumphysics.firstLab.models.Constants.*;
 import static java.lang.Math.PI;
 
 public class RezerfordModel {

@@ -1,4 +1,4 @@
-package com.ssau.tk.quantumphysics.models;
+package com.ssau.tk.quantumphysics.firstLab.models;
 
 public class TableModel {
     private double value;

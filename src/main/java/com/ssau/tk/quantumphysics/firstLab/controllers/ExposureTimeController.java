@@ -1,9 +1,9 @@
-package com.ssau.tk.quantumphysics.controllers;
+package com.ssau.tk.quantumphysics.firstLab.controllers;
 
-import com.ssau.tk.quantumphysics.models.Constants;
-import com.ssau.tk.quantumphysics.models.ExposureTime;
-import com.ssau.tk.quantumphysics.models.ProbabilityDensity;
-import com.ssau.tk.quantumphysics.models.TimeTableModel;
+import com.ssau.tk.quantumphysics.firstLab.models.Constants;
+import com.ssau.tk.quantumphysics.firstLab.models.ExposureTime;
+import com.ssau.tk.quantumphysics.firstLab.models.ProbabilityDensity;
+import com.ssau.tk.quantumphysics.firstLab.models.TimeTableModel;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -56,7 +56,7 @@ public class ExposureTimeController {
 
     @FXML
     protected void getToMainWindow(ActionEvent event) throws IOException {
-        URL resource = MenuController.class.getResource("menu.fxml");
+        URL resource = MenuController.class.getResource("menu1.fxml");
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(resource);
         Parent root1 = fxmlLoader.load();

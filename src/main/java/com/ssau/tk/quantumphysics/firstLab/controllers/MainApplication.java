@@ -1,4 +1,4 @@
-package com.ssau.tk.quantumphysics.controllers;
+package com.ssau.tk.quantumphysics.firstLab.controllers;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -13,7 +13,7 @@ public class MainApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("menu.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("menu1.fxml")));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();

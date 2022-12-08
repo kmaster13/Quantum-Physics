@@ -1,16 +1,16 @@
-package com.ssau.tk.quantumphysics.controllers;
+package com.ssau.tk.quantumphysics.firstLab.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 import java.io.IOException;
 
-import static com.ssau.tk.quantumphysics.controllers.ControllerUtils.setWindow;
+import static com.ssau.tk.quantumphysics.ControllerUtils.setWindow;
 
 public class Introduction {
 
     @FXML
     protected void onMenuButtonAction(ActionEvent event) throws IOException {
-        setWindow("menu.fxml", event, "Меню");
+        setWindow("menu1.fxml", event, "Меню");
     }
 }

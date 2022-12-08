@@ -1,7 +1,7 @@
-package com.ssau.tk.quantumphysics.controllers;
+package com.ssau.tk.quantumphysics.firstLab.controllers;
 
-import com.ssau.tk.quantumphysics.models.RezerfordModel;
-import com.ssau.tk.quantumphysics.models.TableModel;
+import com.ssau.tk.quantumphysics.firstLab.models.RezerfordModel;
+import com.ssau.tk.quantumphysics.firstLab.models.TableModel;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-import static com.ssau.tk.quantumphysics.controllers.ControllerUtils.setWindow;
+import static com.ssau.tk.quantumphysics.ControllerUtils.setWindow;
 
 public class TompsonController implements Initializable {
     private int i = 0;
@@ -125,6 +125,6 @@ public class TompsonController implements Initializable {
     }
     @FXML
     protected void getToMainWindow(ActionEvent event) throws IOException {
-        setWindow("menu.fxml", event, "Меню");
+        setWindow("menu1.fxml", event, "Меню");
     }
 }
