@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" styleClass="mainPane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.firstLab.controllers.ExposureTimeController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" styleClass="mainPane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.firstLab.controllers.ExposureTimeController">
     <HBox alignment="CENTER" prefHeight="75.0" prefWidth="1000.0">
         <Button alignment="CENTER" mnemonicParsing="false" onAction="#getToMainWindow" text="Вернуться в меню" />
     </HBox>
@@ -30,8 +25,8 @@
         </font>
     </Label>
     <Pane layoutX="1022.0" layoutY="61.0" prefHeight="728.0" prefWidth="374.0">
-        <Label prefHeight="42.0" prefWidth="374.0" text="Среднее время ожидания ОДНОЙ альфа-частицы, рассеянной в интервал углов от Θ до Θ + ΔΘ" wrapText="true" />
-        <Label layoutY="42.0" text="Δ(t) = 1/(J * W(Θ) * ΔΘ)" />
-        <Label layoutY="59.0" prefHeight="69.0" prefWidth="374.0" text="Для обычного лабораторного источника J = 10^3 частиц в секунду. Применим угловой размер детектора ΔΘ = 1. Используем значения W(Θ), полученные ранее, можно оценить величину Δ(t)" wrapText="true" />
+        <Label prefHeight="102.0" prefWidth="374.0" style="-fx-font-size: 20px" text="Среднее время ожидания ОДНОЙ альфа-частицы, рассеянной в интервал углов от Θ до Θ + ΔΘ" wrapText="true" />
+        <Label layoutY="102.0" style="-fx-font-size: 20px" text="Δ(t) = 1/(J * W(Θ) * ΔΘ)" />
+        <Label layoutY="132.0" prefHeight="182.0" prefWidth="374.0" style="-fx-font-size: 20px" text="Для обычного лабораторного источника J = 10^3 частиц в секунду. Применим угловой размер детектора ΔΘ = 1. Используем значения W(Θ), полученные ранее, можно оценить величину Δ(t)" wrapText="true" />
     </Pane>
 </AnchorPane>
