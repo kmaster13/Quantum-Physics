@@ -20,12 +20,12 @@
                 </font>
             </Text>
             <Pane prefHeight="200.0" prefWidth="170.0">
-                <Text fx:id="errorTextField" fill="RED" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="170.0" />
+                <Text fx:id="errorTextField" fill="#FF7F50" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="170.0" />
                 <TextField fx:id="textField" layoutY="60.0" prefHeight="35.0" prefWidth="170.0" styleClass="button" stylesheets="@style.css" />
             </Pane>
             <ComboBox fx:id="comboBox" prefHeight="38.0" prefWidth="72.0" styleClass="button" />
             <Pane prefHeight="200.0" prefWidth="200.0">
-                <Text fx:id="errorComboBox" fill="RED" layoutX="18.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="161.0" />
+                <Text fx:id="errorComboBox" fill="#FF7F50" layoutX="18.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="161.0" />
                 <Button layoutX="4.0" layoutY="57.0" mnemonicParsing="false" onAction="#addToTable" prefHeight="44.0" prefWidth="175.0" text="Добавить в таблицу">
                <font>
                   <Font size="15.0" />
