@@ -1,70 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.chart.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-      prefHeight="800.0" prefWidth="1400.0" styleClass="background" xmlns="http://javafx.com/javafx/17.0.2-ea"
-      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.firstLab.controllers.RezerfordController">
-    <VBox alignment="CENTER" prefHeight="800.0" prefWidth="600.0" spacing="40.0">
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" styleClass="mainPane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.firstLab.controllers.RezerfordController">
+    <VBox alignment="CENTER" prefHeight="800.0" prefWidth="600.0" spacing="40.0" styleClass="mainPane" stylesheets="@style.css">
         <TableView fx:id="table" maxWidth="560.0" prefHeight="560.0" prefWidth="560.0">
             <columns>
-                <TableColumn fx:id="value" prefWidth="280.0" text="b"/>
-                <TableColumn fx:id="angle" prefWidth="280.0" text="α"/>
+                <TableColumn fx:id="value" prefWidth="280.0" text="b" />
+                <TableColumn fx:id="angle" prefWidth="280.0" text="α,град." />
             </columns>
         </TableView>
         <HBox alignment="CENTER" prefHeight="155.0" prefWidth="600.0" spacing="20.0">
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="b =">
                 <font>
-                    <Font size="33.0"/>
+                    <Font size="33.0" />
                 </font>
             </Text>
             <Pane prefHeight="200.0" prefWidth="170.0">
-                <Text fx:id="errorTextField" fill="RED" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0"
-                      wrappingWidth="170.0"/>
-                <TextField fx:id="textField" layoutY="60.0" prefHeight="35.0" prefWidth="170.0"/>
+                <Text fx:id="errorTextField" fill="RED" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="170.0" />
+                <TextField fx:id="textField" layoutY="60.0" prefHeight="35.0" prefWidth="170.0" styleClass="button" stylesheets="@style.css" />
             </Pane>
-            <ComboBox fx:id="comboBox" prefHeight="25.0" prefWidth="100.0"/>
+            <ComboBox fx:id="comboBox" prefHeight="43.0" prefWidth="68.0" styleClass="button" stylesheets="@style.css" />
             <Pane prefHeight="200.0" prefWidth="200.0">
-                <Text fx:id="errorComboBox" fill="RED" layoutX="18.0" layoutY="42.0" strokeType="OUTSIDE"
-                      strokeWidth="0.0" wrappingWidth="161.0"/>
-                <Button layoutX="18.0" layoutY="60.0" mnemonicParsing="false" onAction="#addToTable" prefHeight="35.0"
-                        prefWidth="161.0" text="Добавить в таблицу"/>
+                <Text fx:id="errorComboBox" fill="RED" layoutX="18.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="161.0" />
+                <Button layoutX="18.0" layoutY="52.0" mnemonicParsing="false" onAction="#addToTable" prefHeight="50.0" prefWidth="176.0" stylesheets="@style.css" text="Добавить в таблицу" />
             </Pane>
         </HBox>
     </VBox>
-    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="600.0">
-        <LineChart fx:id="firstLineChart" maxHeight="300.0" maxWidth="560.0">
+    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="600.0" styleClass="mainPane">
+        <LineChart fx:id="firstLineChart" maxHeight="300.0" maxWidth="560.0" styleClass="mainPane" stylesheets="@style.css">
             <xAxis>
-                <NumberAxis side="BOTTOM"/>
+                <NumberAxis side="BOTTOM" />
             </xAxis>
             <yAxis>
-                <NumberAxis side="LEFT"/>
+                <NumberAxis side="LEFT" />
             </yAxis>
         </LineChart>
-        <LineChart fx:id="secondLineChart" maxHeight="300.0" maxWidth="560.0">
+        <LineChart fx:id="secondLineChart" maxHeight="300.0" maxWidth="560.0" styleClass="mainPane" stylesheets="@style.css">
             <xAxis>
-                <NumberAxis side="BOTTOM"/>
+                <NumberAxis side="BOTTOM" />
             </xAxis>
             <yAxis>
-                <NumberAxis side="LEFT"/>
+                <NumberAxis side="LEFT" />
             </yAxis>
         </LineChart>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0">
-            <Button mnemonicParsing="false" onAction="#getReboot" prefHeight="50.0" prefWidth="170.0" text="Обновить"/>
-            <Button alignment="CENTER" mnemonicParsing="false" onAction="#getToMainWindow" prefHeight="50.0"
-                    prefWidth="170.0" text="Вернуться в меню"/>
+            <Button mnemonicParsing="false" onAction="#getReboot" prefHeight="50.0" prefWidth="170.0" text="Обновить" />
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#getToMainWindow" prefHeight="50.0" prefWidth="170.0" text="Вернуться в меню" />
         </HBox>
     </VBox>
     <Pane prefHeight="800.0" prefWidth="270.0">
-        <Label layoutY="20.0" text="Поставим мысленный эксперимент:"/>
-        <Label layoutY="40.0" text="бомбардировка атома альфа-частицами."/>
-        <Label layoutY="60.0" text="Задавая различные значения прицельного"/>
-        <Label layoutY="80.0" text="параметра, производите запуск"/>
-        <Label layoutY="100.0" text="альфа-частиц. Вы увидите их траектории."/>
-        <Label layoutY="120.0" text="Проанализируйте значения углов"/>
-        <Label layoutY="140.0" text="рассеяния и определите Θ(max)"/>
+        <Label layoutY="20.0" prefWidth="200.0" text="Поставим мысленный эксперимент:" />
+        <Label layoutY="40.0" text="бомбардировка атома альфа-частицами." />
+        <Label layoutY="60.0" text="Задавая различные значения прицельного" />
+        <Label layoutY="80.0" text="параметра, производите запуск" />
+        <Label layoutY="100.0" text="альфа-частиц. Вы увидите их траектории." />
+        <Label layoutY="120.0" text="Проанализируйте значения углов" />
+        <Label layoutY="140.0" text="рассеяния и определите Θ(max)" />
     </Pane>
 </HBox>

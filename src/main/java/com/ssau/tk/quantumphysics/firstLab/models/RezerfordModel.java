@@ -9,6 +9,8 @@ public class RezerfordModel {
     }
 
     public static double angle(double b, int degree) {
-        return func(b * Math.pow(10, degree - 2));
+        double temp = Math.round(func(b * Math.pow(10, degree - 2)) * 100);
+        return temp / 100;
+//        return func(b * Math.pow(10, degree - 2));
     }
 }

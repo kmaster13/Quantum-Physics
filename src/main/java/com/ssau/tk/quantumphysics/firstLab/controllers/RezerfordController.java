@@ -104,6 +104,7 @@ public class RezerfordController implements Initializable {
 
     private void newGraph(){
         XYChart.Series series1 = new XYChart.Series();
+        series1.setName("График движения α-частиц при столкновении с ядром атома");
         series1.getData().add(new XYChart.Data(0, values.get(i)));
         series1.getData().add(new XYChart.Data(1, values.get(i)));
         try {
@@ -132,6 +133,7 @@ public class RezerfordController implements Initializable {
 
 
         series = new XYChart.Series();
+        series.setName("График зависимости b и α");
         secondLineChart.getData().add(series);
     }
 
