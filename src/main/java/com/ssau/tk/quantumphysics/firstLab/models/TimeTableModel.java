@@ -2,17 +2,17 @@ package com.ssau.tk.quantumphysics.firstLab.models;
 
 public class TimeTableModel {
 
-    private double angle;
+    private String angle;
 
-    private double probRuther;
+    private String probRuther;
 
-    private double timeRuther;
+    private String timeRuther;
 
-    private double probTomp;
+    private String probTomp;
 
-    private double timeTomp;
+    private String timeTomp;
 
-    public TimeTableModel(double angle, double probRuther, double timeRuther, double probTomp, double timeTomp) {
+    public TimeTableModel(String angle, String probRuther, String timeRuther, String probTomp, String timeTomp) {
         this.angle = angle;
         this.probRuther = probRuther;
         this.timeRuther = timeRuther;
@@ -20,43 +20,43 @@ public class TimeTableModel {
         this.timeTomp = timeTomp;
     }
 
-    public double getAngle() {
+    public String getAngle() {
         return angle;
     }
 
-    public void setAngle(double angle) {
+    public void setAngle(String angle) {
         this.angle = angle;
     }
 
-    public double getProbRuther() {
+    public String getProbRuther() {
         return probRuther;
     }
 
-    public void setProbRuther(double probRuther) {
+    public void setProbRuther(String probRuther) {
         this.probRuther = probRuther;
     }
 
-    public double getTimeRuther() {
+    public String getTimeRuther() {
         return timeRuther;
     }
 
-    public void setTimeRuther(double timeRuther) {
+    public void setTimeRuther(String timeRuther) {
         this.timeRuther = timeRuther;
     }
 
-    public double getProbTomp() {
+    public String getProbTomp() {
         return probTomp;
     }
 
-    public void setProbTomp(double probTomp) {
+    public void setProbTomp(String probTomp) {
         this.probTomp = probTomp;
     }
 
-    public double getTimeTomp() {
+    public String getTimeTomp() {
         return timeTomp;
     }
 
-    public void setTimeTomp(double timeTomp) {
+    public void setTimeTomp(String timeTomp) {
         this.timeTomp = timeTomp;
     }
 }

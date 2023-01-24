@@ -2,50 +2,50 @@ package com.ssau.tk.quantumphysics.firstLab.models;
 
 public class ProbabilityTableModel {
 
-    private double angle;
+    private String angle;
 
-    private double prob;
+    private String prob;
 
-    private double realProb;
+    private String realProb;
 
-    private double thompsonProb;
+    private String thompsonProb;
 
-    public ProbabilityTableModel(double angle, double rutherfordProb, double thompsonProb, double realProb) {
+    public ProbabilityTableModel(String angle, String rutherfordProb, String thompsonProb, String realProb) {
         this.angle = angle;
         this.prob = rutherfordProb;
         this.realProb = realProb;
         this.thompsonProb = thompsonProb;
     }
 
-    public double getAngle() {
+    public String getAngle() {
         return angle;
     }
 
-    public double getRutherfordProb() {
+    public String getRutherfordProb() {
         return prob;
     }
 
-    public double getRealProb() {
+    public String getRealProb() {
         return realProb;
     }
 
-    public void setAngle(double angle) {
+    public void setAngle(String angle) {
         this.angle = angle;
     }
 
-    public void setRutherfordProb(double prob) {
+    public void setRutherfordProb(String prob) {
         this.prob = prob;
     }
 
-    public void setRealProb(double realProb) {
+    public void setRealProb(String realProb) {
         this.realProb = realProb;
     }
 
-    public double getThompsonProb() {
+    public String getThompsonProb() {
         return thompsonProb;
     }
 
-    public void setThompsonProb(double thompsonProb) {
+    public void setThompsonProb(String thompsonProb) {
         this.thompsonProb = thompsonProb;
     }
 }

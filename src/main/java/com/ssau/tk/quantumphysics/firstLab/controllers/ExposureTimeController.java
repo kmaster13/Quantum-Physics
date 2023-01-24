@@ -76,11 +76,11 @@ public class ExposureTimeController {
     private void initData() {
         for (int i = 0; i < angleList.size(); i++) {
             TimeData.add(new TimeTableModel(
-                    angleList.get(i),
-                    roundData(rutherfordProbList.get(i)),
-                    roundData(rutherfordTimeList.get(i)),
-                    roundData(thompsonProbList.get(i)),
-                    roundData(thompsonTimeList.get(i))
+                    angleList.get(i) + "°",
+                    roundData(rutherfordProbList.get(i)) + "",
+                    roundData(rutherfordTimeList.get(i)) + "c",
+                    roundData(thompsonProbList.get(i)) + "",
+                    roundData(thompsonTimeList.get(i)) + "c"
             ));
             tableTime.setItems(TimeData);
         }

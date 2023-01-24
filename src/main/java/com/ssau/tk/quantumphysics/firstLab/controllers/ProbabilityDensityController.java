@@ -88,10 +88,10 @@ public class ProbabilityDensityController {
     private void initData() {
         for (int i = 0; i < angleList.size(); i++) {
             ProbData.add(new ProbabilityTableModel(
-                    angleList.get(i),
-                    roundData(rutherfordPropList.get(i)),
-                    roundData(thompsonPropList.get(i)),
-                    roundData(realProbList.get(i))
+                    angleList.get(i) + "°",
+                    roundData(rutherfordPropList.get(i)) + "",
+                    roundData(thompsonPropList.get(i)) + "",
+                    roundData(realProbList.get(i))+ ""
             ));
             tableProb.setItems(ProbData);
         }
