@@ -15,7 +15,12 @@
          <Font name="System Bold" size="44.0"/>
       </font>
    </Button>
-   <Button mnemonicParsing="false" prefHeight="100.0" prefWidth="1160.0" text="Постулаты Бора">
+   <Button mnemonicParsing="false" onAction="#onPostulatesButtonClick" prefHeight="100.0" prefWidth="1160.0" text="Постулаты Бора">
+      <font>
+         <Font name="System Bold" size="44.0"/>
+      </font>
+   </Button>
+   <Button mnemonicParsing="false" onAction="#onConstsButtonClick" prefHeight="100.0" prefWidth="1160.0" text="Система атомных единиц">
       <font>
          <Font name="System Bold" size="44.0"/>
       </font>

@@ -20,4 +20,14 @@ public class MenuController {
     protected void onIntroductionButtonClick(ActionEvent event) throws IOException {
         setWindow("introduction2.fxml", event, "Введение");
     }
+
+    @FXML
+    protected void onPostulatesButtonClick(ActionEvent event) throws IOException {
+        setWindow("postulates.fxml", event, "Постулаты Бора");
+    }
+
+    @FXML
+    protected void onConstsButtonClick(ActionEvent event) throws IOException {
+        setWindow("consts.fxml", event, "Константы");
+    }
 }
