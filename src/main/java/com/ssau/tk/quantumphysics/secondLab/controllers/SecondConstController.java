@@ -7,7 +7,7 @@ import java.io.IOException;
 
 import static com.ssau.tk.quantumphysics.SecondLabControllerUtils.setWindow;
 
-public class ConstController {
+public class SecondConstController {
     @FXML
     protected void onMenuButtonClick(ActionEvent event) throws IOException {
         setWindow("menu2.fxml", event, "Меню");
