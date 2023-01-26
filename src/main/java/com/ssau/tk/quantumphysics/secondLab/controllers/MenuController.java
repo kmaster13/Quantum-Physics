@@ -30,4 +30,14 @@ public class MenuController {
     protected void onConstsButtonClick(ActionEvent event) throws IOException {
         setWindow("consts.fxml", event, "Константы");
     }
+
+    @FXML
+    protected void onCircleHydrogenAtomButtonClick(ActionEvent event) throws IOException {
+        setWindow("hydrogen_atom_circle.fxml", event, "Атом водорода");
+    }
+
+    @FXML
+    protected void onEllipseHydrogenAtomButtonClick(ActionEvent event) throws IOException {
+        setWindow("hydrogen_atom_ellipse.fxml", event, "Атом водорода");
+    }
 }

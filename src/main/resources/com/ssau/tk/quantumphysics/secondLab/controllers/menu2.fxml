@@ -25,6 +25,16 @@
          <Font name="System Bold" size="44.0"/>
       </font>
    </Button>
+   <Button mnemonicParsing="false" onAction="#onCircleHydrogenAtomButtonClick" prefHeight="100.0" prefWidth="1160.0" text="Атом Бора. Круговые орбиты">
+      <font>
+         <Font  name="System Bold" size="44.0"/>
+      </font>
+   </Button>
+   <Button mnemonicParsing="false" onAction="#onEllipseHydrogenAtomButtonClick" prefHeight="100.0" prefWidth="1160.0" text="Атом Бора-Зоммерфельда. Эллиптические орбиты">
+      <font>
+         <Font  name="System Bold" size="44.0"/>
+      </font>
+   </Button>
    <Button mnemonicParsing="false" onAction="#onExitButtonClick" prefHeight="100.0" prefWidth="1160.0" text="Выход">
       <font>
          <Font name="System Bold" size="44.0"/>
