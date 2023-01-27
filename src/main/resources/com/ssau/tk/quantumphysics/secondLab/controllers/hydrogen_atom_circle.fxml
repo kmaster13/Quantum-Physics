@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.ssau.tk.quantumphysics.secondLab.controllers.HydrogenAtomCircleController"
-            prefHeight="400.0" prefWidth="600.0">
+<VBox alignment="CENTER" maxHeight="800.0" maxWidth="1200.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" spacing="40.0" styleClass="background" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.secondLab.controllers.HydrogenAtomCircleController">
+    <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="76.0" prefWidth="1100.0" text="Правило квантования - ПОСТУЛАТ, проверяемый ТОЛЬКО эксперементом. В кулоновском поле сил ЭНЕРГИЯ и МОМЕНТ ИМПУЛЬСА на круговым орбитах связаны соотношением: En = -me^4/2Ln^2; Если En - эксперементальные занчения уровней энергии, ТО момент импульса дожен быть равен: Ln = (-me^4/2En)^1/2 В этом разделе используется СИСТЕМА АТОМНЫХ ЕДИНИЦ длины, времени, массы, скорости, энергии, момента импульса." wrapText="true" />
 
-</AnchorPane>
+    <Button layoutX="157.0" layoutY="516.0" mnemonicParsing="false" onAction="#onMenuButtonClick" prefHeight="50.0" prefWidth="800.0" text="Вернуться в меню" textAlignment="CENTER">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+    </Button>
+
+</VBox>
