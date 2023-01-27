@@ -40,4 +40,8 @@ public class MenuController {
     protected void onEllipseHydrogenAtomButtonClick(ActionEvent event) throws IOException {
         setWindow("hydrogen_atom_ellipse.fxml", event, "Атом водорода");
     }
+    @FXML
+    protected void onBalmerButtonClick(ActionEvent event) throws IOException {
+        setWindow("Balmer.fxml", event, "Обобщенная формула Бальмера . Спектральные серии");
+    }
 }
