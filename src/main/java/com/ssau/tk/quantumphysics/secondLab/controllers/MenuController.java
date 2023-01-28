@@ -32,6 +32,11 @@ public class MenuController {
     }
 
     @FXML
+    protected void onSchemaButtonClick(ActionEvent event) throws IOException {
+        setWindow("schema.fxml", event, "Схема");
+    }
+
+    @FXML
     protected void onCircleHydrogenAtomButtonClick(ActionEvent event) throws IOException {
         setWindow("hydrogen_atom_circle.fxml", event, "Атом водорода");
     }

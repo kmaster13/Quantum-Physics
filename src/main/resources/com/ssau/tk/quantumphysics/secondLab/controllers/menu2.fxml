@@ -4,47 +4,45 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox styleClass="background" alignment="CENTER" maxHeight="800.0" maxWidth="1200.0" minHeight="-Infinity"
-      minWidth="-Infinity" prefHeight="900.0" prefWidth="1200.0" spacing="40.0" xmlns="http://javafx.com/javafx/19"
-      xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.ssau.tk.quantumphysics.secondLab.controllers.MenuController">
-   <Button mnemonicParsing="false" onAction="#onIntroductionButtonClick" prefHeight="100.0" prefWidth="1160.0"
-           text="Введение">
+<VBox alignment="CENTER" maxHeight="800.0" maxWidth="1200.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" spacing="25.0" styleClass="gradient--test" stylesheets="@assets/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.secondLab.controllers.MenuController">
+   <Button mnemonicParsing="false" onAction="#onIntroductionButtonClick" prefHeight="50.0" prefWidth="1160.0" text="Введение">
       <font>
-         <Font name="System Bold" size="44.0"/>
+         <Font name="System Bold" size="30.0" />
       </font>
    </Button>
-   <Button mnemonicParsing="false" onAction="#onPostulatesButtonClick" prefHeight="100.0" prefWidth="1160.0" text="Постулаты Бора">
+   <Button mnemonicParsing="false" onAction="#onSchemaButtonClick" prefHeight="50.0" prefWidth="1160.0" text="Схема эксперимента">
       <font>
-         <Font name="System Bold" size="44.0"/>
+         <Font name="System Bold" size="30.0" />
       </font>
    </Button>
-   <Button mnemonicParsing="false" onAction="#onConstsButtonClick" prefHeight="100.0" prefWidth="1160.0" text="Система атомных единиц">
+   <Button mnemonicParsing="false" onAction="#onPostulatesButtonClick" prefHeight="50.0" prefWidth="1160.0" text="Постулаты Бора">
       <font>
-         <Font name="System Bold" size="44.0"/>
+         <Font name="System Bold" size="30.0" />
       </font>
    </Button>
-   <Button mnemonicParsing="false" onAction="#onBalmerButtonClick" prefHeight="100.0" prefWidth="1160.0"
-           text="Обобщенная формула Бальмера.">
+   <Button mnemonicParsing="false" onAction="#onConstsButtonClick" prefHeight="50.0" prefWidth="1160.0" text="Система атомных единиц">
       <font>
-         <Font name="System Bold" size="44.0"/>
+         <Font name="System Bold" size="30.0" />
       </font>
    </Button>
-   <Button mnemonicParsing="false" onAction="#onCircleHydrogenAtomButtonClick" prefHeight="100.0" prefWidth="1160.0" text="Атом Бора. Круговые орбиты">
+   <Button mnemonicParsing="false" onAction="#onBalmerButtonClick" prefHeight="50.0" prefWidth="1160.0" text="Обобщенная формула Бальмера">
       <font>
-         <Font  name="System Bold" size="44.0"/>
+         <Font name="System Bold" size="30.0" />
       </font>
    </Button>
-   <Button mnemonicParsing="false" onAction="#onEllipseHydrogenAtomButtonClick" prefHeight="100.0" prefWidth="1160.0" text="Атом Бора-Зоммерфельда. Эллиптические орбиты">
+   <Button mnemonicParsing="false" onAction="#onCircleHydrogenAtomButtonClick" prefHeight="50.0" prefWidth="1160.0" text="Атом Бора. Круговые орбиты">
       <font>
-         <Font  name="System Bold" size="44.0"/>
+         <Font name="System Bold" size="30.0" />
       </font>
    </Button>
-   <Button mnemonicParsing="false" onAction="#onExitButtonClick" prefHeight="100.0" prefWidth="1160.0" text="Выход">
+   <Button mnemonicParsing="false" onAction="#onEllipseHydrogenAtomButtonClick" prefHeight="50.0" prefWidth="1160.0" text="Атом Бора-Зоммерфельда. Эллиптические орбиты">
       <font>
-         <Font name="System Bold" size="44.0"/>
+         <Font name="System Bold" size="30.0" />
       </font>
    </Button>
-
+   <Button mnemonicParsing="false" onAction="#onExitButtonClick" prefHeight="50.0" prefWidth="1160.0" stylesheets="@assets/style.css" text="Выход">
+      <font>
+         <Font name="System Bold" size="30.0" />
+      </font>
+   </Button>
 </VBox>

@@ -1,327 +1,327 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-      prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.ssau.tk.quantumphysics.secondLab.controllers.SecondConstController">
-    <Label alignment="CENTER" prefHeight="50.0" prefWidth="1100.0"
-           text="В атомной системе единиц ( е = ħ = m = 1) за единицы длины, скорости, времени и т.д. приняты соответсвующие значения для основного состояния в модели Бора.">
-        <VBox.margin>
-            <Insets top="25.0"/>
-        </VBox.margin>
-        <font>
-            <Font name="System Bold Italic" size="13.0"/>
-        </font>
-    </Label>
-    <HBox maxWidth="1100.0" prefHeight="600.0" prefWidth="1100.0">
-        <VBox.margin>
-            <Insets bottom="25.0" top="25.0"/>
-        </VBox.margin>
-        <VBox prefHeight="600.0" prefWidth="366.0">
-            <Label alignment="TOP_CENTER" prefHeight="20.0" prefWidth="366.0" text="Название">
-                <font>
-                    <Font name="System Bold" size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Скорость света в вакууме">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Элементарный заряд">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Постоянная планка">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Постоянная тонкой структуры">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text=" ">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Масса покоя электрона">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Масса покоя протона">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Отношение масс протона и электрона">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Масса покоя нейтрона">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Длина (радиус Бора)">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Время">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Скорость">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0"
-                   text="Отношение скорости к скорости света в вакууме -">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="постоянная тонкой структуры">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Энергия">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Энергия (ридберг)">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Скорость света в вакууме">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Момент импульса">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-        </VBox>
-        <VBox prefHeight="600.0" prefWidth="366.0">
-            <Label alignment="CENTER" prefHeight="20.0" prefWidth="366.0" text="Обозначение/Формула">
-                <font>
-                    <Font name="System Bold" size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="с = ">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="e =">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="ħ = h/2π =">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="α = е^2/ħc =">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="1/α =">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Mе = ">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Mp =">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Mp/Me =">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Mn =">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="a = ħ^2/(Me*e^2) =">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="t = ħ^3/(Me*e^4) =">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="v = e^2/ħ =">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="α = е^2/ħc =">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Е = e^2/a =  ħ^2/(Me*a^2) =">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Ry = E/2 =">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="c/v =">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="ħ = h/2π =">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-        </VBox>
-        <VBox prefHeight="600.0" prefWidth="366.0">
-            <Label alignment="CENTER" prefHeight="20.0" prefWidth="366.0" text="Значение">
-                <font>
-                    <Font name="System Bold" size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="2.99792е+10 см/c | 2.99792е+8 м/с">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0"
-                   text="4.80394e-10 ед.СГСЭ | 1.60219е-10 Кл.">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0"
-                   text="1.05459e-27 эрг*с | 1.05459e-34 Дж*с">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="7.29735е-3">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="137.036">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="9.1095e-28 г | 9.1095e-31 кг">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="1.67265e-24 г | 1.67265e-27 кг">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="1836.15">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="1.67495е-24 г | 1.67495е-27 кг">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="5.2918e-8 см | 5.2918е-10 м">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="2.4189e-17 c">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="2.1877e+8 см/c | 2.1877e+6 м/c">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="1/137.036">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="7.297354е-3">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0"
-                   text="27.212 эВ | 4.3598е-11 эрг | 4.3598е-18 Дж">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0"
-                   text="13.606 эВ | 2.1799е-11 эрг | 2.1799е-18 Дж">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="137.036">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-            <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0"
-                   text="1.05459e-27 эрг*с | 1.05459e-34 Дж*с">
-                <font>
-                    <Font size="15.0"/>
-                </font>
-            </Label>
-        </VBox>
-    </HBox>
-    <Button mnemonicParsing="false" onAction="#onMenuButtonClick" prefHeight="60.0" prefWidth="450.0"
-            text="Назад в меню">
-        <font>
-            <Font name="System Bold" size="26.0"/>
-        </font>
-    </Button>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="gradient--test" stylesheets="@assets/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.secondLab.controllers.ConstController">
+   <children>
+      <Label alignment="CENTER" prefHeight="50.0" prefWidth="1100.0" text="В атомной системе единиц ( е = ħ = m = 1) за единицы длины, скорости, времени и т.д. приняты соответсвующие значения для основного состояния в модели Бора.">
+         <VBox.margin>
+            <Insets top="25.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <HBox maxWidth="1100.0" prefHeight="600.0" prefWidth="1100.0">
+         <VBox.margin>
+            <Insets bottom="25.0" top="25.0" />
+         </VBox.margin>
+         <children>
+            <VBox prefHeight="600.0" prefWidth="366.0">
+               <children>
+                  <Label alignment="TOP_CENTER" prefHeight="20.0" prefWidth="366.0" text="Название">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Скорость света в вакууме">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Элементарный заряд">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Постоянная планка">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Постоянная тонкой структуры">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text=" ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Масса покоя электрона">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Масса покоя протона">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Отношение масс протона и электрона">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Масса покоя нейтрона">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Длина (радиус Бора)">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Время">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Скорость">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Отношение скорости к скорости света в вакууме -">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="постоянная тонкой структуры">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Энергия">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Энергия (ридберг)">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Скорость света в вакууме">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Момент импульса">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="600.0" prefWidth="366.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="20.0" prefWidth="366.0" text="Обозначение/Формула">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="с = ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="e =">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="ħ = h/2π =">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="α = е^2/ħc =">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="1/α =">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Mе = ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Mp =">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Mp/Me =">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Mn =">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="a = ħ^2/(Me*e^2) =">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="t = ħ^3/(Me*e^4) =">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="v = e^2/ħ =">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="α = е^2/ħc =">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Е = e^2/a =  ħ^2/(Me*a^2) =">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="Ry = E/2 =">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="c/v =">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="ħ = h/2π =">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="600.0" prefWidth="366.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="20.0" prefWidth="366.0" text="Значение">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="2.99792е+10 см/c | 2.99792е+8 м/с">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="4.80394e-10 ед.СГСЭ | 1.60219е-10 Кл.">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="1.05459e-27 эрг*с | 1.05459e-34 Дж*с">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="7.29735е-3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="137.036">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="9.1095e-28 г | 9.1095e-31 кг">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="1.67265e-24 г | 1.67265e-27 кг">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="1836.15">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="1.67495е-24 г | 1.67495е-27 кг">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="5.2918e-8 см | 5.2918е-10 м">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="2.4189e-17 c">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="2.1877e+8 см/c | 2.1877e+6 м/c">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="1/137.036">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="7.297354е-3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="27.212 эВ | 4.3598е-11 эрг | 4.3598е-18 Дж">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="13.606 эВ | 2.1799е-11 эрг | 2.1799е-18 Дж">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="137.036">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="366.0" text="1.05459e-27 эрг*с | 1.05459e-34 Дж*с">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#onMenuButtonClick" prefHeight="60.0" prefWidth="450.0" text="Назад в меню">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Button>
+   </children>
 </VBox>

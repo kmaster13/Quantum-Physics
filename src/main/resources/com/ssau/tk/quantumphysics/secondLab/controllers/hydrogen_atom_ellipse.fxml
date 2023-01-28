@@ -4,19 +4,14 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-<VBox alignment="CENTER" maxHeight="800.0" maxWidth="1200.0" minHeight="-Infinity"
-      minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" spacing="40.0" xmlns="http://javafx.com/javafx/19"
-      xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.ssau.tk.quantumphysics.secondLab.controllers.HydrogenAtomEllipseController">
 
-    <Button layoutX="157.0" layoutY="594.0" mnemonicParsing="false" onAction="#onMenuButtonClick" prefHeight="50.0"
-            prefWidth="800.0" text="Вернуться в меню" textAlignment="CENTER">
+<VBox alignment="CENTER" maxHeight="800.0" maxWidth="1200.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" spacing="40.0" styleClass="gradient--test" stylesheets="@assets/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.secondLab.controllers.HydrogenAtomEllipseController">
+
+    <Button layoutX="157.0" layoutY="594.0" mnemonicParsing="false" onAction="#onMenuButtonClick" prefHeight="50.0" prefWidth="800.0" text="Вернуться в меню" textAlignment="CENTER">
         <font>
-            <Font name="System Bold" size="12.0"/>
+            <Font name="System Bold" size="12.0" />
         </font>
     </Button>
-    <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="600.0" prefWidth="1100.0"
-           text="ЕСЛИ, измерив тонкую структуру спектральных линий, определить сдвиги уровней энергии релятивистского электрона относительно уровней энергии нерелятивистского электрона - δEnL, ТО величину момента момента импульса L можно определить по формуле тонкой структуры Зоммерфельда: δEnL = -Ryα^2 (1/n^3) {1/L - 3/(4n)} В этой программе тонкая структура линий не измеряется, момент импульса не определяется; Сдвиг уровня энергии демонстрируется. В этом разделе используется СИСТЕМА АТОМНЫХ ЕДИНИЦ длины, времени, массы, скорости, энергии, момент импульса."
-           wrapText="true"/>
+    <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="600.0" prefWidth="1100.0" text="ЕСЛИ, измерив тонкую структуру спектральных линий, определить сдвиги уровней энергии релятивистского электрона относительно уровней энергии нерелятивистского электрона - δEnL, ТО величину момента момента импульса L можно определить по формуле тонкой структуры Зоммерфельда: δEnL = -Ryα^2 (1/n^3) {1/L - 3/(4n)} В этой программе тонкая структура линий не измеряется, момент импульса не определяется; Сдвиг уровня энергии демонстрируется. В этом разделе используется СИСТЕМА АТОМНЫХ ЕДИНИЦ длины, времени, массы, скорости, энергии, момент импульса." wrapText="true" />
 
 </VBox>

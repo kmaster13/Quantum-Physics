@@ -5,20 +5,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-      prefHeight="800.0" prefWidth="1200.0" spacing="40.0"
-      xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.ssau.tk.quantumphysics.secondLab.controllers.IntroductionController">
-   <Button mnemonicParsing="false" onAction="#onMenuButtonClick" prefHeight="50.0" prefWidth="800.0"
-           text="Вернуться в меню" textAlignment="CENTER">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" spacing="40.0" styleClass="gradient--test" stylesheets="@assets/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.secondLab.controllers.IntroductionController">
+   <Label alignment="TOP_LEFT" prefHeight="600.0" prefWidth="1100.0" text="В 1913 году Н.Бор опубликовал статью 'Относительно строения атомов и молекул', в которой впервые была изложена новая концепция строения атома, основанная на системе существенно неклассических положений, известных сегодня как Постулаты Бора. Наиболее впечатляющим успехом теории Бора было вычисление постоянной Ридберга - эмпирической постоянной, определенной по огромному спектроскопическому материалу. Основным вопросом в теории Бора является вопрос о том, почему для получения правильных результатов необходимо привлечение правил квантования - искусственных условий, ограничивающих классическое движение частиц. Предлагаемая программа даёт возможность провести собственное экспериментальное исследование проблемы 'Атом водорода' и выработать свою точку зрения на постулаты Бора." wrapText="true">
       <font>
-         <Font name="System Bold" size="12.0"/>
+         <Font size="31.0" />
+      </font></Label>
+   <Button mnemonicParsing="false" onAction="#onMenuButtonClick" prefHeight="50.0" prefWidth="450.0" text="Вернуться в меню" textAlignment="CENTER">
+      <font>
+         <Font name="System Bold" size="23.0" />
       </font>
    </Button>
-   <Label alignment="TOP_LEFT" prefHeight="600.0" prefWidth="1100.0" text="В 1913 году Н.Бор опубликовал статью 'Относительно строения атомов и молекул', в которой впервые
-была изложена новая концепция строения атома, основанная на системе существенно неклассических положений, известных сегодня как Постулаты Бора. Наиболее впечатляющим успехом
-теории Бора было вычисление постоянной Ридберга - эмпирической постоянной, определенной по огромному спектроскопическому материалу. Основным вопросом в теории Бора является
-вопрос о том, почему для получения правильных результатов необходимо привлечение правил квантования - искусственных условий, ограничивающих классическое движение частиц.
-Предлагаемая программа даёт возможность провести собственное экспериментальное исследование проблемы 'Атом водорода' и выработать свою точку зрения на постулаты Бора." wrapText="true"/>
 </VBox>

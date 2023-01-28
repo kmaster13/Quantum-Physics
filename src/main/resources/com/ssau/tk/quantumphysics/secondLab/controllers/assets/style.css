@@ -1,17 +1,25 @@
 .blue--background{
-    -fx-background-color: #80A6FF;
+    -fx-background-color: #00e1fd;
+    -fx-border-width: 1px;
+    -fx-border-color: #000;
+}
+.background{
     -fx-border-width: 1px;
     -fx-border-color: #000;
 }
 
-.red--background{
-    -fx-background-color: #800000;
-    -fx-border-width: 1px;
-    -fx-border-color: #000;
+.gradient--test{
+    -fx-background: linear-gradient(to bottom, #00e1fd, #fc007a);
 }
 
-.green--background{
-    -fx-background-color: #008000;
-    -fx-border-width: 1px;
-    -fx-border-color: #000;
+.button {
+    -fx-border-color: #1d1d1d;
+    -fx-border-width: 2;
+    -fx-border-radius: 28;
+    -fx-text-fill: #1d1d1d;
+    -fx-background-color: linear-gradient(to bottom,#ff2cdf, #fc007a);
+    -fx-background-radius: 28;
+}
+.button:hover{
+    -fx-background-color: linear-gradient(to bottom, #00e5ff, #00e1fd);
 }

@@ -7,99 +7,76 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-      prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.ssau.tk.quantumphysics.secondLab.controllers.PostulatesController"
-      stylesheets="@assets/style.css">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="gradient--test" stylesheets="@assets/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ssau.tk.quantumphysics.secondLab.controllers.PostulatesController">
     <children>
         <HBox maxHeight="600.0" maxWidth="1100.0" prefHeight="600.0" prefWidth="1100.0">
             <VBox.margin>
-                <Insets bottom="50.0" top="50.0"/>
+                <Insets bottom="50.0" top="50.0" />
             </VBox.margin>
             <children>
                 <VBox prefHeight="600.0" prefWidth="550.0">
                     <children>
-                        <Label styleClass="green--background" alignment="CENTER" prefHeight="120.0" prefWidth="550.0"
-                               text="Тезис" textOverrun="CLIP">
+                        <Label alignment="CENTER" prefHeight="120.0" prefWidth="550.0" styleClass="background" text="Тезис" textOverrun="CLIP">
                             <font>
-                                <Font name="System Bold" size="33.0"/>
+                                <Font name="System Bold" size="33.0" />
                             </font>
                         </Label>
-                        <Label styleClass="red--background" alignment="TOP_LEFT" prefHeight="120.0" prefWidth="550.0"
-                               text="Электрон в атоме, двигаясь с ускорением, непрерывно излучает, теряя энергию."
-                               wrapText="true">
+                        <Label alignment="CENTER_RIGHT" prefHeight="120.0" prefWidth="550.0" styleClass="background" text="Электрон в атоме, двигаясь с ускорением, непрерывно излучает, теряя энергию." wrapText="true">
                             <font>
-                                <Font size="24.0"/>
+                                <Font size="24.0" />
                             </font>
                         </Label>
-                        <Label styleClass="blue--background" alignment="TOP_LEFT" prefHeight="120.0" prefWidth="550.0"
-                               text="Энергия излучается (и поглощается) сколь угодно малыми порциями, энергия атома изменяется непрерывно."
-                               wrapText="true">
+                        <Label alignment="CENTER" prefHeight="120.0" prefWidth="550.0" styleClass="background" text="Энергия излучается (и поглощается) сколь угодно малыми порциями, энергия атома изменяется непрерывно." wrapText="true">
                             <font>
-                                <Font size="24.0"/>
+                                <Font size="24.0" />
                             </font>
                         </Label>
-                        <Label styleClass="red--background" alignment="TOP_LEFT" prefHeight="120.0" prefWidth="550.0"
-                               text="Частота излучения (и поглощения) равна частоте обращения электрона по орбите и изменяется непрерывно вместе с энергией."
-                               wrapText="true">
+                        <Label alignment="CENTER" prefHeight="120.0" prefWidth="550.0" styleClass="background" text="Частота излучения (и поглощения) равна частоте обращения электрона по орбите и изменяется непрерывно вместе с энергией." wrapText="true">
                             <font>
-                                <Font size="24.0"/>
+                                <Font size="24.0" />
                             </font>
                         </Label>
-                        <Label styleClass="blue--background" alignment="TOP_LEFT" prefHeight="120.0" prefWidth="550.0"
-                               text="Электрон в атоме движется по любой орбите, допустимой законами механики."
-                               wrapText="true">
+                        <Label alignment="CENTER" prefHeight="120.0" prefWidth="550.0" styleClass="background" text="Электрон в атоме движется по любой орбите, допустимой законами механики." wrapText="true">
                             <font>
-                                <Font size="24.0"/>
+                                <Font size="24.0" />
                             </font>
                         </Label>
                     </children>
                 </VBox>
                 <VBox prefHeight="300.0" prefWidth="550.0">
                     <children>
-                        <Label styleClass="green--background" alignment="CENTER" prefHeight="120.0" prefWidth="550.0"
-                               text="Антитезис"
-                               textOverrun="CLIP">
+                        <Label alignment="CENTER" prefHeight="120.0" prefWidth="550.0" styleClass="background" text="Антитезис" textOverrun="CLIP">
                             <font>
-                                <Font name="System Bold" size="33.0"/>
+                                <Font name="System Bold" size="33.0" />
                             </font>
                         </Label>
-                        <Label styleClass="red--background" alignment="TOP_LEFT" prefHeight="120.0" prefWidth="550.0"
-                               text="Электрон в атоме находится в состоянии с постоянной энергией и не излучает."
-                               wrapText="true">
+                        <Label alignment="CENTER" prefHeight="120.0" prefWidth="550.0" styleClass="background" text="Электрон в атоме находится в состоянии с постоянной энергией и не излучает." wrapText="true">
                             <font>
-                                <Font size="24.0"/>
+                                <Font size="24.0" />
                             </font>
                         </Label>
-                        <Label styleClass="blue--background" alignment="TOP_LEFT" prefHeight="120.0" prefWidth="550.0"
-                               text="Энергия излучается (и поглощается) квантами конечной величины, энергия атома изменяется дискретно."
-                               wrapText="true">
+                        <Label alignment="CENTER" prefHeight="120.0" prefWidth="550.0" styleClass="background" text="Энергия излучается (и поглощается) квантами конечной величины, энергия атома изменяется дискретно." wrapText="true">
                             <font>
-                                <Font size="24.0"/>
+                                <Font size="24.0" />
                             </font>
                         </Label>
-                        <Label styleClass="red--background" alignment="TOP_LEFT" prefHeight="120.0" prefWidth="550.0"
-                               text="Частота излучения (и поглощения) определяется законом сохранения энергии : ħω = Ei - Ef."
-                               wrapText="true">
+                        <Label alignment="CENTER" prefHeight="120.0" prefWidth="550.0" styleClass="background" text="Частота излучения (и поглощения) определяется законом сохранения энергии : ħω = Ei - Ef." wrapText="true">
                             <font>
-                                <Font size="24.0"/>
+                                <Font size="24.0" />
                             </font>
                         </Label>
-                        <Label styleClass="blue--background" alignment="TOP_LEFT" prefHeight="120.0" prefWidth="550.0"
-                               text="Из орбит, допустимых законами механики, специальными правилами выбираются лишь 'разрешенные' орбиты."
-                               wrapText="true">
+                        <Label alignment="CENTER" prefHeight="120.0" prefWidth="550.0" styleClass="background" text="Из орбит, допустимых законами механики, специальными правилами выбираются лишь 'разрешенные' орбиты." wrapText="true">
                             <font>
-                                <Font size="24.0"/>
+                                <Font size="24.0" />
                             </font>
                         </Label>
                     </children>
                 </VBox>
             </children>
         </HBox>
-        <Button mnemonicParsing="false" onAction="#onMenuButtonClick" prefHeight="58.0" prefWidth="445.0"
-                text="Вернуться в меню">
+        <Button mnemonicParsing="false" onAction="#onMenuButtonClick" prefHeight="58.0" prefWidth="445.0" text="Вернуться в меню">
             <font>
-                <Font size="29.0"/>
+                <Font name="System Bold" size="29.0" />
             </font>
         </Button>
     </children>
